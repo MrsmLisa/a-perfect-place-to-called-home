@@ -13,34 +13,35 @@ header {
 .main-section {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 h1 {
     color: whitesmoke;
     font-family: "roboto", "san-serif";
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin: 0 10px;
 }
 
-.main-text {
+/*.main-text {
     background-color: whitesmoke;
     width: 60%;
     border-radius: 15px;
     margin: 20px;
-}
+}*/
 
 p {
-    color: black;
-    font-family: "Quicksand", "san-serif";
+    color: white;
+    font-family: "roboto", "san-serif";
     font-size: 15px;
     text-align: center;
     margin: 30px 40px;
+    width: 90%;
 }
 
-button {
+.read-more-button {
     font-family: "roboto", "san-serif";
     color: white;
     background-color: #242d4e;
@@ -73,10 +74,7 @@ footer {
         max-height: 15em;
     }
      .image-footer {
-        max-height: 18em;
-    }
-    .main-text {
-        width: 90%;
+        max-height: 10em;
     }
 }
 
@@ -85,7 +83,7 @@ footer {
         max-height: 19em;
     }
      .image-footer {
-        max-height: 22em;
+        max-height: 20em;
     }
 }
 
@@ -94,6 +92,14 @@ footer {
         max-height: 25em;
     }
      .image-footer {
-        max-height: 30em;
+        max-height: 16em;
     }
+    p {
+        text-align: left;
+    }
+   .main-div {
+    align-items: start;
+    width: 40%;
+   }
+    
 }
