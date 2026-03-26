@@ -9,9 +9,18 @@ header {
     align-content: center;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 
 @media (min-width: 320px) {
     .image-header {
+        max-height: 15em;
+    }
+     .image-footer {
         max-height: 15em;
     }
 }
@@ -20,16 +29,16 @@ header {
     .image-header {
         max-height: 19em;
     }
+     .image-footer {
+        max-height: 22em;
+    }
 }
 
 @media (min-width: 1024px) {
     .image-header{
         max-height: 25em;
     }
-}
-
-@media (min-width: 1440) {
-    .image-header {
-        max-height: 35em;
+     .image-footer {
+        max-height: 30em;
     }
 }
