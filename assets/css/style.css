@@ -9,10 +9,31 @@ header {
     align-content: center;
 }
 
+h1 {
+    color: whitesmoke;
+    font-family: "roboto";
+    font-size: 40px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+p {
+    color: whitesmoke;
+    font-family: "Quicksand";
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 40px;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.image-footer {
+    position: fixed;
+    bottom: 0;
 }
 
 
@@ -21,7 +42,7 @@ footer {
         max-height: 15em;
     }
      .image-footer {
-        max-height: 15em;
+        max-height: 18em;
     }
 }
 
