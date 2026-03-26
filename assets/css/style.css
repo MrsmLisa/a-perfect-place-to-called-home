@@ -1,3 +1,35 @@
-#imageHeader {
-    min-height: 100px;
+
+body {
+    background-color: #6d7f71;
+}
+
+header {
+     display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@media (min-width: 320px) {
+    .image-header {
+        max-height: 15em;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-header {
+        max-height: 19em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-header{
+        max-height: 25em;
+    }
+}
+
+@media (min-width: 1440) {
+    .image-header {
+        max-height: 35em;
+    }
 }
