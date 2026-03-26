@@ -1,4 +1,5 @@
 
+
 body {
     background-color: #6d7f71;
 }
@@ -9,9 +10,23 @@ header {
     align-content: center;
 }
 
+.read-button {
+     display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    font-family: "roboto", "san-serif";
+    background-color: whitesmoke;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+}
+
 h1 {
     color: whitesmoke;
-    font-family: "roboto";
+    font-family: "roboto", "san-serif";
     font-size: 40px;
     text-align: center;
     margin: 0 10px;
@@ -19,7 +34,7 @@ h1 {
 
 p {
     color: whitesmoke;
-    font-family: "Quicksand";
+    font-family: "Quicksand", "san-serif";
     font-size: 15px;
     text-align: center;
     margin: 30px 40px;
