@@ -10,18 +10,11 @@ header {
     align-content: center;
 }
 
-.read-button {
-     display: flex;
+.main-section {
+    display: flex;
     justify-content: center;
     align-content: center;
-}
-
-button {
-    font-family: "roboto", "san-serif";
-    background-color: whitesmoke;
-    border: none;
-    padding: 15px;
-    border-radius: 20px;
+    flex-direction: column;
 }
 
 h1 {
@@ -32,12 +25,35 @@ h1 {
     margin: 0 10px;
 }
 
+.main-text {
+    background-color: whitesmoke;
+    width: 60%;
+    border-radius: 15px;
+    margin: 20px;
+}
+
 p {
-    color: whitesmoke;
+    color: black;
     font-family: "Quicksand", "san-serif";
     font-size: 15px;
     text-align: center;
     margin: 30px 40px;
+}
+
+button {
+    font-family: "roboto", "san-serif";
+    color: white;
+    background-color: #242d4e;
+    border: none;
+    width: 200px;
+    padding: 15px;
+    border-radius: 20px;
+   
+}
+
+.carousel-div {
+    height: 400px;
+    background-color:#6d7f71;
 }
 
 footer {
@@ -58,6 +74,9 @@ footer {
     }
      .image-footer {
         max-height: 18em;
+    }
+    .main-text {
+        width: 90%;
     }
 }
 
