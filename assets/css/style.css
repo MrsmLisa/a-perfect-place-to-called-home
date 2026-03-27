@@ -25,13 +25,6 @@ h1 {
     margin: 0 10px;
 }
 
-/*.main-text {
-    background-color: whitesmoke;
-    width: 60%;
-    border-radius: 15px;
-    margin: 20px;
-}*/
-
 p {
     color: white;
     font-family: "roboto", "san-serif";
@@ -92,14 +85,10 @@ footer {
         max-height: 25em;
     }
      .image-footer {
-        max-height: 16em;
+        max-height: 14em;
     }
     p {
-        text-align: left;
+        width: 60%;
     }
-   .main-div {
-    align-items: start;
-    width: 40%;
-   }
     
 }
