@@ -15,8 +15,24 @@ function next() {
     imageSlide[currentImage].style.display = "none"
     currentImage = (currentImage + 1) % imageSlide.length;
     imageSlide[currentImage].style.display = "block"
-    
 }
+
+function prev() {
+    if(currentImage === 0){
+        currentImage = imageSlide.length - 1
+        return
+    }
+    imageSlide[currentImage].style.display = "none"
+    currentImage = (currentImage - 1) % imageSlide.length;
+    imageSlide[currentImage].style.display = "block"
+}
+
+/*function prev() {
+    imageSlide[currentImage].style.display = "none"
+    currentImage = (currentImage) imageSlide.length -1;
+    imageSlide[currentImage].style.display = "block"
+    
+}*/
 
 /*console.log("hi")*/
 
