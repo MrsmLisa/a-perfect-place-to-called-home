@@ -1,4 +1,6 @@
-
+function hi() {
+    console.log("hi")
+}
 
 let imageSlide = document.getElementsByClassName("carousel-image")
 
@@ -11,5 +13,10 @@ let currentImage = 0
 
 function next() {
     imageSlide[currentImage].style.display = "none"
-    imageSlide[currentImage++].style.display = "block"
+    currentImage = (currentImage + 1) % imageSlide.length;
+    imageSlide[currentImage].style.display = "block"
+    
 }
+
+/*console.log("hi")*/
+
