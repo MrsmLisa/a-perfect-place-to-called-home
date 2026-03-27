@@ -45,9 +45,13 @@ p {
    
 }
 
-.carousel-div {
-    height: 400px;
-    background-color:#6d7f71;
+.caroulse-container {
+    max-width: 900px;
+    position: relative;
+}
+
+.carousel-image {
+    display: none;
 }
 
 footer {
