@@ -45,6 +45,11 @@ p {
    
 }
 
+.space {
+    background-color: #6d7f71;
+    height: 20em;
+}
+
 .caroulse-container {
     display: flex;
     max-width: 900px;
