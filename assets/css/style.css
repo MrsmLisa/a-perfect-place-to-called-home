@@ -42,7 +42,10 @@ p {
     width: 200px;
     padding: 15px;
     border-radius: 20px;
-   
+}
+
+.dotts {
+    width: 100px;
 }
 
 .space {
@@ -128,6 +131,9 @@ footer {
         max-height: 14em;
     }
     p {
+        width: 40%;
+    }
+    .caroulse-container {
         width: 60%;
     }
     
