@@ -1,7 +1,12 @@
-function hi() {
-    console.log("hi")
+
+/* Read me button */
+
+function readMe() {
+    let scrollDown = document.getElementById("carousel")
+    scrollDown.scrollIntoView(true)
 }
 
+/* carousel*/
 let imageSlide = document.getElementsByClassName("carousel-image")
 
 for (i=0; i < imageSlide.length; i++) {
