@@ -1,105 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A perfect place to call home</title>
     <!-- css script -->
-     <link rel="stylesheet" href="./assets/css/style.css">
-     <!-- Google fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-     <script src="https://kit.fontawesome.com/051882cf1d.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/051882cf1d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <img src="./assets/images/header.png" class="image-header" alt="">
+      <img src="./assets/images/header.png" class="image-header" alt="" />
     </header>
 
     <!-- Main -->
     <main>
-        <section class="content-wrapper">
+      <section class="content-wrapper">
         <div class="main-section">
-            <h1 class="main-title">A PERFECT PLACE TO CALL HOME</h1>
+          <h1 class="main-title">A PERFECT PLACE TO CALL HOME</h1>
         </div>
 
         <div class="main-text main-section">
-            <p>A Perfect Place to Call Home is Julia Nascimento’s first collection of visual narratives about her experiences and reflections of life in different places as a foreigner. </p>
+          <p>
+            A Perfect Place to Call Home is Julia Nascimento’s first collection
+            of visual narratives about her experiences and reflections of life
+            in different places as a foreigner.
+          </p>
         </div>
 
         <div class="main-section">
-            <button class="read-more-button" id="readMeButton" onclick="readMe()">Read som of my comic</button>
+          <button class="read-more-button" id="readMeButton" onclick="readMe()">
+            Read som of my comic
+          </button>
         </div>
-        
+
         <!-- Carousel -->
         <div class="space main-section">
-            <img src="./assets/images/dotts.png" alt="Dots in a squrly line moving down" class="dotts" id="dotts">
+          <img
+            src="./assets/images/dotts.png"
+            alt="Dots in a squrly line moving down"
+            class="dotts"
+            id="dotts"
+          />
         </div>
 
         <div class="caroulse-container main-section" id="carousel">
-            <h2 class="h1-slide">Year after disaster</h2>
-            <!-- images -->
-            <div class="carousel-image">
-                <img src="assets/images/comic1.png" alt="image 1">
-                <img src="assets/images/comic2.png" alt="image 2">
-            </div>
-             <div class="carousel-image">
-                <img src="assets/images/comic3.png" alt="image 3">
-                <img src="assets/images/comic4.png" alt="image 4">
-            </div>
-             <div class="carousel-image">
-                <img src="assets/images/comic5.png" alt="image 5">
-                <img src="assets/images/comic6.png" alt="image 6">
-            </div>
-            <!-- buttons from Font Awesome--> 
-             <i class="fa-solid fa-circle-chevron-left" onclick="prev()"></i>
-             <i class="fa-solid fa-circle-chevron-right" onclick="next()"></i>
+          <h2 class="h1-slide">Year after disaster</h2>
+          <!-- images -->
+          <div class="carousel-image">
+            <img src="assets/images/comic1.png" alt="image 1" />
+            <img src="assets/images/comic2.png" alt="image 2" />
+          </div>
+          <div class="carousel-image">
+            <img src="assets/images/comic3.png" alt="image 3" />
+            <img src="assets/images/comic4.png" alt="image 4" />
+          </div>
+          <div class="carousel-image">
+            <img src="assets/images/comic5.png" alt="image 5" />
+            <img src="assets/images/comic6.png" alt="image 6" />
+          </div>
+          <!-- buttons from Font Awesome-->
+          <i class="fa-solid fa-circle-chevron-left" onclick="prev()"></i>
+          <i class="fa-solid fa-circle-chevron-right" onclick="next()"></i>
         </div>
-     
-        
-        <div class="space">
-            <div class="main-section">
-                <button>About the author</button>
-                <button>Moving quiss</button>
 
-            </div>
+        <div class="space">
+          <div class="main-section">
+            <button onclick="authorModal()">About the author</button>
+            <button>Moving quiss</button>
+          </div>
         </div>
-        </section>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <img src="./assets/images/footer.png" class="image-footer" alt="">
+      <img src="./assets/images/footer.png" class="image-footer" alt="" />
     </footer>
 
     <!-- About the author modul -->
-   
+
     <section class="content-wrapper">
-        <div class="modal-container">
-            <div>
-                <img src="./assets/images/julia.png" alt="picture of the author">
-                <p>Julia Nascimento is a Brazilian illustrator and cartoonist with art, fashion, and research backgrounds. Employing a multidisciplinary and multicultural approach to her work, she is passionate about autobiographical narratives and collaborations. <br>
+      <div class="modal-container x" id="author">
+        <div>
+          <!-- Font Awesome X -->
+          <i class="fa-solid fa-xmark" onclick="authorModal()"></i> 
+          <img src="./assets/images/julia.png" alt="picture of the author" />
+          <p>
+            Julia Nascimento is a Brazilian illustrator and cartoonist with art,
+            fashion, and research backgrounds. Employing a multidisciplinary and
+            multicultural approach to her work, she is passionate about
+            autobiographical narratives and collaborations. <br />
 
-While living in Japan for almost a decade she pursued postgraduate studies in fashion and worked in different sectors of the fashion industry. In 2017 she launched her career in illustration and comics, and in 2018 she co-founded ToCo – the Tokyo Collective. <br>
+            While living in Japan for almost a decade she pursued postgraduate
+            studies in fashion and worked in different sectors of the fashion
+            industry. In 2017 she launched her career in illustration and
+            comics, and in 2018 she co-founded ToCo – the Tokyo Collective.
+            <br />
 
-Currently based in Sweden, Julia Nascimento has her work published in books and periodicals in Japan, Sweden, USA, and the UK.</p>
-            </div>
-
+            Currently based in Sweden, Julia Nascimento has her work published
+            in books and periodicals in Japan, Sweden, USA, and the UK.
+          </p>
         </div>
+      </div>
 
-        <div class="space main-section">
-            <img src="./assets/images/dotts.png" alt="Dots in a squrly line moving down" class="dotts" id="dotts">
-        </div>
-        
+      <div class="space main-section">
+      
+      </div>
     </section>
 
     <!-- js script-->
-     <script src="./js/app.js"></script>
-     
-</body>
-
+    <script src="./js/app.js"></script>
+  </body>
 </html>

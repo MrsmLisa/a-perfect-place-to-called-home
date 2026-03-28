@@ -32,5 +32,14 @@ function prev() {
     imageSlide[currentImage].style.display = "block"
 }
 
+/* Author modal */
 
-
+function authorModal() {
+    let authorM = document.getElementById("author")
+    
+    if (authorM.style.display === "none") {
+        authorM.style.display = "block"
+    } else {
+        authorM.style.display = "none"
+    }
+}
