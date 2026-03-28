@@ -19,12 +19,15 @@ header {
     flex-direction: column;
 }
 
-h1 {
+h1, h2, h3 {
     color: whitesmoke;
     font-family: "roboto", "san-serif";
-    font-size: 30px;
     text-align: center;
     margin: 0 10px;
+}
+
+.main-title {
+    font-size: 30px;
 }
 
 p {
@@ -36,7 +39,7 @@ p {
     width: 90%;
 }
 
-.read-more-button {
+button {
     font-family: "roboto", "san-serif";
     color: white;
     background-color: #242d4e;
@@ -115,7 +118,7 @@ footer {
         max-height: 19em;
     }
      .image-footer {
-        max-height: 20em;
+        max-height: 15em;
     }
     .carousel-image img {
     width: 45%; 
@@ -137,3 +140,5 @@ footer {
     }
     
 }
+
+@media (min-width: 1440px)
