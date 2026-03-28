@@ -34,7 +34,7 @@ function prev() {
 
 /* Author modal */
 
-function authorModal() {
+/*function authorModal() {
     let authorM = document.getElementById("author")
     
     if (authorM.style.display === "none") {
@@ -42,4 +42,4 @@ function authorModal() {
     } else {
         authorM.style.display = "none"
     }
-}
+}*/
