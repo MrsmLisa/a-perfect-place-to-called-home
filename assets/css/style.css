@@ -12,11 +12,21 @@ header {
     align-content: center;
 }
 
+.content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
 .main-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 h1, h2, h3 {
@@ -50,7 +60,7 @@ button {
 }
 
 .dotts {
-    width: 84px;
+    width: 100px;
 }
 
 .space {
