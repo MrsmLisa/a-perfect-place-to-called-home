@@ -101,7 +101,7 @@
     <!-- About the author modul -->
 
     <section class="content-wrapper">
-      <div class="modal-container" id="author">
+      <div class="modal-container author" id="author">
         <div>
           <!-- Font Awesome X -->
           <i class="fa-solid fa-xmark" onclick="authorModal()"></i> 
@@ -126,26 +126,26 @@
     </section>
      <!-- Quizz modul -->
      <section class="content-wrapper">
-      <div class="modal-container" id="quizz">
+      <div class="modal-container quizz" id="quizz">
         <div>
           <h3>Should you move abroad?</h3>
           <!-- Font Awesome X -->
            <i class="fa-solid fa-xmark" onclick=""></i>
-           <p><strong>Do you like to travel abroad?</strong></p>
-           <label for="quizz"> <input type="checkbox" id="yes"> Yes</label>
-           <label for="quizz"><input type="checkbox" id="no">No</label>
+           <p>Do you like to travel abroad?</p>
+           <label> <input type="checkbox" id="q-1" required name="yes"> Yes</label>
+           <label><input type="checkbox" id="q-1" name="no">No</label>
              <p><strong>Do you like foreign food?</strong></p>
-           <label for="quizz"> <input type="checkbox" id="yes"> Yes</label>
-           <label for="quizz"><input type="checkbox" id="no">No</label>
+             <label> <input type="checkbox" id="q-2" required name="yes"> Yes</label>
+           <label><input type="checkbox" id="q-2" name="no">No</label>
              <p><strong>Do you like moving?</strong></p>
-           <label for="quizz"> <input type="checkbox" id="yes"> Yes</label>
-           <label for="quizz"><input type="checkbox" id="no">No</label>
+           <label> <input type="checkbox" id="q-3" required name="yes"> Yes</label>
+           <label><input type="checkbox" id="q-3" name="no">No</label>
              <p><strong>Do you find it easy to learn a new language?</strong></p>
-           <label for="quizz"> <input type="checkbox" id="yes"> Yes</label>
-           <label for="quizz"><input type="checkbox" id="no">No</label>
+             <label> <input type="checkbox" id="q-4" required name="yes"> Yes</label>
+           <label><input type="checkbox" id="q-4" name="no">No</label>
              <p><strong>Could you leave your loved once behind?</strong></p>
-           <label for="quizz"> <input type="checkbox" id="yes"> Yes</label>
-           <label for="quizz"><input type="checkbox" id="no">No</label>
+             <label> <input type="checkbox" id="q-5" required name="yes"> Yes</label>
+           <label><input type="checkbox" id="q-5" name="no">No</label>
         </div>
 
       </div>
@@ -153,12 +153,12 @@
      
      <!--contact modal -->
      <section class="content-wrapper">
-      <div class="contact-container">
+      <div class="contact-container contact-box">
         <h3>Hello!</h3>
         <p>Please leave me a message and I will get back to you as soon as possible.</p>
-        <input class="contact" type="text" placeholder="Your name" required>
-        <input class="contact" type="email" placeholder="Email" required>
-        <textarea class="contact" rows="5" placeholder="Message" required></textarea>
+        <input class="contact" id="name" name="name" type="text" placeholder="Your name" autocomplete="given-name" required>
+        <input class="contact" id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+        <textarea class="contact" id="message" name="message" rows="5" placeholder="Message" required></textarea>
       </div>
      </section>
 
