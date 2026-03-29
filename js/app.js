@@ -46,15 +46,25 @@ function authorModal() {
 }
 
 /* Quizz */
-function quizzAnswer(){
+/* Claude AI told me to put in the eventlistner as I had problem with the required input and the submitbutton */
+function quizzAnswer(event){
+    event.preventDefault()
 let yesAnswer = document.getElementsByClassName("yes")
+let answer = 0
 
-for (i=0; i < yesAnswer.length; i <= 3) {
-    if (yesAnswer) {
-        alert("yes")
-    } else {
-        alert("no")
-    }
+for (i=0; i < yesAnswer.length; i++) {
+   if (yesAnswer[i].checked === true) {
+        answer++
+   } 
 }   
+console.log(answer)
+if (answer >=3) {
+    alert("yes")
+} else {
+    alert("no")
 }
+return
+}
+document.getElementById("quizz-form").addEventListener("submit", quizzAnswer)
+
 

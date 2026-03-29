@@ -128,28 +128,31 @@
      <section class="content-wrapper">
       <div class="modal-container quizz" id="quizz">
         <div>
+          <form id="quizz-form" method="get">
           <h3>Should you move abroad?</h3>
           <!-- Font Awesome X -->
            <i class="fa-solid fa-xmark" onclick=""></i>
            <p>Do you like to travel abroad?</p>
-           <label> <input type="checkbox" id="q-1" required class="yes"> Yes</label>
-           <label><input type="checkbox" id="q-1" class="no">No</label>
+           <label> <input name="q1" type="radio" id="q-1" required class="yes"> Yes</label>
+           <label><input name="q1" type="radio" id="q-1" class="no">No</label>
              <p><strong>Do you like foreign food?</strong></p>
-             <label> <input type="checkbox" id="q-2" required class="yes"> Yes</label>
-           <label><input type="checkbox" id="q-2" class="no">No</label>
+             <label> <input name="q2" type="radio" id="q-2" required class="yes"> Yes</label>
+           <label><input name="q2" type="radio" id="q-2" class="no">No</label>
              <p><strong>Do you like moving?</strong></p>
-           <label> <input type="checkbox" id="q-3" required class="yes"> Yes</label>
-           <label><input type="checkbox" id="q-3" class="no">No</label>
+           <label> <input name="q3" type="radio" id="q-3" required class="yes"> Yes</label>
+           <label><input name="q3" type="radio" id="q-3" class="no">No</label>
              <p><strong>Do you find it easy to learn a new language?</strong></p>
-             <label> <input type="checkbox" id="q-4" required class="yes"> Yes</label>
-           <label><input type="checkbox" id="q-4" class="no">No</label>
+             <label> <input name="q4" type="radio" id="q-4" required class="yes"> Yes</label>
+           <label><input name="q4" type="radio" id="q-4" class="no">No</label>
              <p><strong>Could you leave your loved once behind?</strong></p>
-             <label> <input type="checkbox" id="q-5" required class="yes"> Yes</label>
-           <label><input type="checkbox" id="q-5" class="no">No</label>
+             <label> <input name="q5" type="radio" id="q-5" required class="yes"> Yes</label>
+           <label><input name="q5" type="radio" id="q-5" class="no">No</label>
+           <div>
+          <button type="submit">Get my answer</button>
         </div>
-        <div>
-          <button onclick="quizzAnswer()">Get my answer</button>
+           </form>
         </div>
+        
 
       </div>
      </section>
