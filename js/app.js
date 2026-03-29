@@ -1,5 +1,5 @@
 
-/* Read me button */
+/* Read me buttons move down to carousel */
 
 function readMe() {
     let scrollDown = document.getElementById("carousel")
@@ -43,5 +43,18 @@ function authorModal() {
     } else {
         authorM.style.display = "none"
     }
+}
+
+/* Quizz */
+function quizzAnswer(){
+let yesAnswer = document.getElementsByClassName("yes")
+
+for (i=0; i < yesAnswer.length; i <= 3) {
+    if (yesAnswer) {
+        alert("yes")
+    } else {
+        alert("no")
+    }
+}   
 }
 
