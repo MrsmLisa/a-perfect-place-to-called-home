@@ -45,6 +45,18 @@ function authorModal() {
     }
 }
 
+/* Quizz modal */
+
+function quizzModal() {
+    let quizzM = document.getElementById("quizz")
+
+    if (quizzM.style.display === "none") {
+        quizzM.style.display = "block"
+    } else {
+        quizzM.style.display = "none"
+    }
+}
+
 /* Quizz */
 /* Claude AI told me to put in the eventlistner as I had problem with the required input and the submitbutton */
 function quizzAnswer(event){
@@ -67,4 +79,13 @@ return
 }
 document.getElementById("quizz-form").addEventListener("submit", quizzAnswer)
 
+/* Contact modal */
+function contactModal() {
+    let contactM = document.getElementById("contact")
 
+    if (contactM.style.display === "none") {
+        contactM.style.display = "block"
+    } else {
+        contactM.style.display = "none"
+    }
+}

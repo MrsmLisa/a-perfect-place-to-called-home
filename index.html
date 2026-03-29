@@ -131,7 +131,7 @@
           <form id="quizz-form" method="get">
           <h3>Should you move abroad?</h3>
           <!-- Font Awesome X -->
-           <i class="fa-solid fa-xmark" onclick=""></i>
+           <i class="fa-solid fa-xmark" onclick="quizzModal()"></i>
            <p>Do you like to travel abroad?</p>
            <label> <input name="q1" type="radio" id="q-1" required class="yes"> Yes</label>
            <label><input name="q1" type="radio" id="q-1" class="no">No</label>
@@ -159,8 +159,9 @@
      
      <!--contact modal -->
      <section class="content-wrapper">
-      <div class="contact-container contact-box">
+      <div class="contact-container contact-box" id="contact">
         <h3>Hello!</h3>
+        <i class="fa-solid fa-xmark" onclick="contactModal()"></i>
         <p>Please leave me a message and I will get back to you as soon as possible.</p>
         <input class="contact" id="name" name="name" type="text" placeholder="Your name" autocomplete="given-name" required>
         <input class="contact" id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
