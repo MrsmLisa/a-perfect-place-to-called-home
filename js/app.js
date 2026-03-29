@@ -22,6 +22,7 @@ function next() {
     imageSlide[currentImage].style.display = "block"
 }
 
+/* Claude Ai done the bugging and added the % for this function*/
 function prev() {
     if(currentImage === 0){
         currentImage = imageSlide.length - 1
@@ -34,7 +35,7 @@ function prev() {
 
 /* Author modal */
 
-/*function authorModal() {
+function authorModal() {
     let authorM = document.getElementById("author")
     
     if (authorM.style.display === "none") {
@@ -42,4 +43,5 @@ function prev() {
     } else {
         authorM.style.display = "none"
     }
-}*/
+}
+

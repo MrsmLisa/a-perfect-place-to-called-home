@@ -6,6 +6,19 @@ body {
     background-color: #6d7f71;
 }
 
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 98;
+}
+
 header {
      display: flex;
     justify-content: center;
@@ -57,6 +70,14 @@ button {
     width: 200px;
     padding: 15px;
     border-radius: 20px;
+}
+
+.button-nav {
+    background: none;
+    width: 50px;
+    padding: 5px;
+    border-radius: 0;
+    font-size: large;
 }
 
 .dotts {
@@ -125,7 +146,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    display: block;
+    display: none;
     z-index: 99;
 }
 
