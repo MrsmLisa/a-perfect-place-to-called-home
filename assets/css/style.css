@@ -74,8 +74,8 @@ button {
 
 .button-nav {
     background: none;
-    width: 50px;
-    padding: 5px;
+    width: 80px;
+    padding: 20px;
     border-radius: 0;
     font-size: large;
 }
@@ -138,7 +138,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #6d7f71;
     width: 90%;
     height: 90%;
     position: fixed;
@@ -146,7 +146,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    display: none;
+    display: block;
     z-index: 99;
 }
 
@@ -155,9 +155,10 @@ footer {
     padding: 30px;
 }
 
-.modal-container p {
-    color: black;
-    margin: 30px;
+.contact {
+    width: 70%;
+    padding: 5px;
+    margin: 10px;
 }
 
 
@@ -180,6 +181,9 @@ footer {
     }
     .carousel-image img {
     width: 45%; 
+    }
+    .contact {
+        width: 40%;
     }
 }
 
