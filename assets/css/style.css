@@ -15,10 +15,11 @@ body {
     right: 0;
     display: block;
     z-index: 95;
+    padding: 10px 8px;
 }
 
 header {
-     display: flex;
+    display: flex;
     justify-content: center;
     align-content: center;
 }
@@ -54,8 +55,11 @@ h1, h2, h3 {
 p {
     color: white;
     font-family: "roboto", "san-serif";
-    font-size: 15px;
     text-align: center;
+}
+
+.first-text {
+    font-size: 15px;
     margin: 30px 40px;
     width: 90%;
 }
@@ -130,6 +134,16 @@ footer {
     bottom: 0;
 }
 
+.modal-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+}
+
+.modal-none {
+    display: none;
+}
+
 .modal-container {
     display: flex;
     justify-content: center;
@@ -139,16 +153,24 @@ footer {
     width: 90%;
     height: 90%;
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-container img {
+    width: 75%;
+    padding-top: 20px;
+}
+
+.author-text {
+    font-size: 15px;
     width: 90%;
-    padding: 30px;
+}
+
+.fa-xmark {
+    color: white;
+    padding: 5px;
 }
 
 .contact {
@@ -184,6 +206,9 @@ footer {
     .image-header {
         max-height: 19em;
     }
+    .first-text{
+        width: 50%;
+    }
      .image-footer {
         max-height: 15em;
     }
@@ -196,7 +221,10 @@ footer {
     .main-row {
     flex-direction: row;
     padding-top: 5px;
-}
+    }
+    .modal-container {
+        width: 50%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -205,9 +233,6 @@ footer {
     }
      .image-footer {
         max-height: 14em;
-    }
-    p {
-        width: 40%;
     }
     .caroulse-container {
         width: 60%;
