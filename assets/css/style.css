@@ -65,7 +65,7 @@ button {
     color: white;
     background-color: #242d4e;
     border: none;
-    width: 180px;
+    width: 130px;
     padding: 12px;
     border-radius: 20px;
     margin: 10px;
@@ -81,7 +81,7 @@ button {
 }
 
 .caroulse-container {
-    max-width: 75%;
+    max-width: 80%;
     position: relative;
     align-items: center;
     background-color: white;
@@ -91,9 +91,8 @@ button {
     padding-top: 10px;
 }
 
-.carousel-image p {
+.carousel-image h3 {
     color: black;
-    font-size: small;
     margin: 5px;
 }
 

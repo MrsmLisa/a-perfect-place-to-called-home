@@ -45,6 +45,14 @@ function prev() {
     imageSlide[currentImage].style.display = "none"
     currentImage = (currentImage - 1) % imageSlide.length;
     imageSlide[currentImage].style.display = "block"
+
+    if(currentDot === 0){
+        currentDot = dottSlide.length - 1
+        return
+    }
+    dottSlide[currentDot].style.color = "grey"
+    currentDot = (currentDot - 1) % dottSlide.length;
+    dottSlide[currentDot].style.color = "black"
 }
 
 
