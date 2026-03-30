@@ -6,15 +6,24 @@ body {
     background-color: #6d7f71;
 }
 
-.navbar-container {
+/*.navbar-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     width: 95%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
+    display: block;
+    z-index: 95;
+}*/
+
+.burger {
+    color: white;
+    font-size: 1.5em;
+    opacity: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
     display: block;
     z-index: 95;
 }
@@ -39,7 +48,7 @@ header {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 h1, h2, h3 {
@@ -67,21 +76,14 @@ button {
     color: white;
     background-color: #242d4e;
     border: none;
-    width: 200px;
-    padding: 15px;
+    width: 180px;
+    padding: 12px;
     border-radius: 20px;
+    margin: 10px;
 }
 
-.button-nav {
-    background: none;
-    width: 80px;
-    padding: 20px;
-    border-radius: 0;
-    font-size: large;
-}
-
-.dotts {
-    width: 100px;
+.squiggle {
+    width: 94px;
 }
 
 .space {
@@ -95,19 +97,15 @@ button {
     padding: 10px;
 }
 
-.dotts-indicators {
-    display: flex;
-    flex-direction: row;
-}
-
 .caroulse-container {
-    max-width: 90%;
+    max-width: 75%;
     position: relative;
     align-items: center;
     background-color: white;
     flex-direction: column;
     margin: 0 auto;
     border-radius: 15px;
+    padding-top: 10px;
 }
 
 .carousel-image {
@@ -117,15 +115,25 @@ button {
     width: 100%;
 }
 
+.carousel-image p {
+    color: black;
+    font-size: small;
+    margin: 5px;
+    align-items: center;
+}
+
 .carousel-image img {
     width: 90%;  
 }
 
+.fa-circle {
+    color: black;
+}
 
-.fa-solid {
+.arrows {
+    display: flex;
     flex-direction: row;
-    padding: 10px;
-    size: 10%;
+    padding: 5px;
 }
 
 footer {

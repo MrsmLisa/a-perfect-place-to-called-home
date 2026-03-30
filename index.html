@@ -22,10 +22,10 @@
 
   <body>
     <!-- Nav-bar -->
-     <section class="navbar-container">
-      <div>
-        <button class="button-nav">Contact</button>
-        <button class="button-nav" onclick="authorModal()">About</button>
+     <section >
+      <div class="navbar-container">
+        <!-- Font Awsome burger-->
+        <i class="fa-solid fa-bars burger"></i>
       </div>
      </section>
     <!-- Header and nav-bar -->
@@ -59,45 +59,64 @@
           <img
             src="./assets/images/dotts.png"
             alt="Dots in a squrly line moving down"
-            class="dotts"
+            class="squiggle"
             id="dotts"
           />
         </div>
 
         <div class="caroulse-container main-section" id="carousel">
-          <h2 class="h1-slide">Year after disaster</h2>
+            <div class="arrows">
+             <div class="carousel-image">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+          </div>
           <!-- images -->
           <div class="carousel-image">
+            <p>Year-after disasters</p>
             <img src="assets/images/comic1.webp" alt="image 1" />
             <img src="assets/images/comic2.webp" alt="image 2" />
           </div>
           <div class="carousel-image">
+            <p>Year-after disasters</p>
             <img src="assets/images/comic3.webp" alt="image 3" />
             <img src="assets/images/comic4.webp" alt="image 4" />
           </div>
           <div class="carousel-image">
+            <p>Year-after disasters</p>
             <img src="assets/images/comic5.webp" alt="image 5" />
             <img src="assets/images/comic6.webp" alt="image 6" />
           </div>
           <div class="carousel-image">
+            <p>In bloom</p>
             <img src="assets/images/comic7.webp" alt="image 7" />
             <img src="assets/images/comic8.webp" alt="image 8" />
           </div>
           <div class="carousel-image">
+            <p>In bloom</p>
             <img src="assets/images/comic9.webp" alt="image 9" />
             <img src="assets/images/comic10.webp" alt="image 10" />
           </div>
           <div class="carousel-image">
+            <p>In bloom</p>
             <img src="assets/images/comic11.webp" alt="image 11" />
             <img src="assets/images/comic12.webp" alt="image 12" />
           </div>
           <div class="carousel-image">
+            <p>In bloom</p>
             <img src="assets/images/comic13.webp" alt="image 13" />
             <img src="assets/images/comic14.webp" alt="image 14" />
           </div>
+         
           <!-- buttons from Font Awesome-->
-          <i class="fa-solid fa-circle-chevron-left" onclick="prev()"></i>
-          <i class="fa-solid fa-circle-chevron-right" onclick="next()"></i>
+         
+          <i class="fa-solid fa-circle-chevron-left arrows" onclick="prev()"></i>
+          <i class="fa-solid fa-circle-chevron-right arrows" onclick="next()"></i>
+          </div>
         </div>
 
         <div class="space">
