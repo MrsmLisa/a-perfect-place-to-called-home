@@ -89,3 +89,9 @@ function contactModal() {
         contactM.style.display = "none"
     }
 }
+
+
+/* dotts
+
+pick up all the dots 
+for loop */ 

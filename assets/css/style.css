@@ -95,8 +95,14 @@ button {
     padding: 10px;
 }
 
+.dotts-indicators {
+    display: flex;
+    flex-direction: row;
+}
+
 .caroulse-container {
     max-width: 90%;
+    position: relative;
     align-items: center;
     background-color: white;
     flex-direction: column;
