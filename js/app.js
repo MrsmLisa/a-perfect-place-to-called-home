@@ -16,13 +16,27 @@ imageSlide[0].style.display= "block"
 
 let currentImage = 0
 
+/* Dotts slide */
+let dottSlide = document.getElementsByClassName("dotts")
+
+for (i=0; i < dottSlide.length; i++) {
+    dottSlide[i].style.color = "grey"
+}
+dottSlide[0].style.color = "black"
+
+let currentDot = 0
+
+/* Claude Ai done the bugging and added the % for these functions so it would wrap*/
 function next() {
     imageSlide[currentImage].style.display = "none"
     currentImage = (currentImage + 1) % imageSlide.length;
     imageSlide[currentImage].style.display = "block"
+
+    dottSlide[currentDot].style.color = "grey"
+    currentDot = (currentDot + 1) % dottSlide.length;
+    dottSlide[currentDot].style.color = "black"
 }
 
-/* Claude Ai done the bugging and added the % for this function*/
 function prev() {
     if(currentImage === 0){
         currentImage = imageSlide.length - 1
@@ -32,6 +46,7 @@ function prev() {
     currentImage = (currentImage - 1) % imageSlide.length;
     imageSlide[currentImage].style.display = "block"
 }
+
 
 /* Author modal */
 
