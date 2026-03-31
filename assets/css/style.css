@@ -158,6 +158,10 @@ footer {
     transform: translate(-50%, -50%);
 }
 
+.modal-width {
+    width: 100%;
+}
+
 .modal-container img {
     width: 75%;
     padding-top: 20px;
@@ -197,7 +201,7 @@ footer {
         max-height: 15em;
     }
      .image-footer {
-        max-height: 10em;
+        max-height: 7em;
     }
     
 }
