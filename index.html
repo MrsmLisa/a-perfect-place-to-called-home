@@ -22,13 +22,20 @@
 
   <body>
     <!-- Nav-bar -->
-     <section >
+    <section>
       <div class="navbar-container">
+        <div class="navbar-box">
         <!-- Font Awsome burger-->
-        <i class="fa-solid fa-bars burger"></i>
+          <i class="fa-solid fa-bars burger"></i>
+          </div>
+        <div class="navbar-box">
+          <button><strong>AUTHOR</strong></button>
+          <button><strong>QUIZZ</strong></button>
+          <button><strong>CONTACT</strong></button>
+        </div>
       </div>
-     </section>
-    <!-- Header and nav-bar -->
+    </section>
+    <!-- Header-->
     <header>
       <img src="./assets/images/header.webp" class="image-header" alt="" />
     </header>
@@ -49,12 +56,15 @@
         </div>
 
         <div class="main-section">
-          <button class="read-more-button" id="readMeButton" onclick="readMe()">
+          <button
+            class="read-more-button buttons"
+            id="readMeButton"
+            onclick="readMe()"
+          >
             Read a sample
           </button>
         </div>
 
-        <!-- Carousel -->
         <div class="space main-section">
           <img
             src="./assets/images/dotts.png"
@@ -63,9 +73,8 @@
             id="dotts"
           />
         </div>
-
+        <!-- Carousel -->
         <div class="caroulse-container main-section" id="carousel">
-          
           <!-- images -->
           <div class="carousel-image">
             <h3>Year-after disasters</h3>
@@ -103,8 +112,8 @@
             <img src="assets/images/comic14.webp" alt="image 14" />
           </div>
 
-            <!-- buttons and dotts from Font Awesome-->
-             <div class="arrows">
+          <!-- buttons and dotts from Font Awesome-->
+          <div class="arrows">
             <i class="fa-solid fa-circle dotts" id="dotts"></i>
             <i class="fa-solid fa-circle dotts" id="dotts"></i>
             <i class="fa-solid fa-circle dotts" id="dotts"></i>
@@ -113,18 +122,23 @@
             <i class="fa-solid fa-circle dotts" id="dotts"></i>
             <i class="fa-solid fa-circle dotts" id="dotts"></i>
           </div>
-         
-          
+
           <div class="arrows">
-            <i class="fa-solid fa-circle-chevron-left arrows" onclick="prev()"></i>
-          <i class="fa-solid fa-circle-chevron-right arrows" onclick="next()"></i>
+            <i
+              class="fa-solid fa-circle-chevron-left arrows"
+              onclick="prev()"
+            ></i>
+            <i
+              class="fa-solid fa-circle-chevron-right arrows"
+              onclick="next()"
+            ></i>
           </div>
         </div>
 
         <div class="space">
           <div class="main-section arrows">
-            <button onclick="authorModal()">About</button>
-            <button onclick="quizzModal()">Quizz</button>
+            <button class="buttons" onclick="authorModal()">About</button>
+            <button class="buttons" onclick="quizzModal()">Quizz</button>
           </div>
         </div>
       </section>
@@ -140,82 +154,130 @@
     <section class="modal-wrapper">
       <div class="modal-none author" id="author">
         <div class="modal-container">
-          <!-- Font Awesome X -->
-           <div class="modal-width">
-          <i class="fa-solid fa-xmark" onclick="authorModal()"></i> 
-          </div>
           <div class="modal-width">
-          <img src="./assets/images/julia.png" alt="picture of the author" />
-          <p class="author-text">
-            Julia Nascimento is a Brazilian illustrator and cartoonist with art,
-            fashion, and research backgrounds. Employing a multidisciplinary and
-            multicultural approach to her work, she is passionate about
-            autobiographical narratives and collaborations.
+            <img src="./assets/images/julia.png" alt="picture of the author" />
+            <p class="author-text">
+              Julia Nascimento is a Brazilian illustrator and cartoonist with
+              art, fashion, and research backgrounds. Employing a
+              multidisciplinary and multicultural approach to her work, she is
+              passionate about autobiographical narratives and collaborations.
             </p>
-            <p class="author-text">While living in Japan for almost a decade she pursued postgraduate
-            studies in fashion and worked in different sectors of the fashion
-            industry. In 2017 she launched her career in illustration and
-            comics, and in 2018 she co-founded ToCo – the Tokyo Collective.
+            <p class="author-text">
+              While living in Japan for almost a decade she pursued postgraduate
+              studies in fashion and worked in different sectors of the fashion
+              industry. In 2017 she launched her career in illustration and
+              comics, and in 2018 she co-founded ToCo – the Tokyo Collective.
             </p>
-            <p class="author-text">Currently based in Sweden, Julia Nascimento has her work published
-            in books and periodicals in Japan, Sweden, USA, and the UK.
-          </p>
+            <p class="author-text">
+              Currently based in Sweden, Julia Nascimento has her work published
+              in books and periodicals in Japan, Sweden, USA, and the UK.
+            </p>
+            <!-- Font Awesome X -->
+            <i class="fa-solid fa-xmark" onclick="authorModal()"></i>
           </div>
         </div>
-      </div> 
+      </div>
     </section>
-     <!-- Quizz modul -->
-     <section class="modal-wrapper">
-      <div class="modal-none"  id="quizz">
-      <div class="modal-container quizz">
-        <div>
-          <form id="quizz-form" method="get">
-          <h3>Should you move abroad?</h3>
-          <!-- Font Awesome X -->
-           <i class="fa-solid fa-xmark" onclick="quizzModal()"></i>
-           <p>Do you like to travel abroad?</p>
-           <label> <input name="q1" type="radio" id="q-1" required class="yes"> Yes</label>
-           <label><input name="q1" type="radio" id="q-1" class="no">No</label>
-             <p><strong>Do you like foreign food?</strong></p>
-             <label> <input name="q2" type="radio" id="q-2" required class="yes"> Yes</label>
-           <label><input name="q2" type="radio" id="q-2" class="no">No</label>
-             <p><strong>Do you like moving?</strong></p>
-           <label> <input name="q3" type="radio" id="q-3" required class="yes"> Yes</label>
-           <label><input name="q3" type="radio" id="q-3" class="no">No</label>
-             <p><strong>Do you find it easy to learn a new language?</strong></p>
-             <label> <input name="q4" type="radio" id="q-4" required class="yes"> Yes</label>
-           <label><input name="q4" type="radio" id="q-4" class="no">No</label>
-             <p><strong>Could you leave your loved once behind?</strong></p>
-             <label> <input name="q5" type="radio" id="q-5" required class="yes"> Yes</label>
-           <label><input name="q5" type="radio" id="q-5" class="no">No</label>
-           <div>
-          <button type="submit">Get my answer</button>
+    <!-- Quizz modul -->
+    <section class="modal-wrapper">
+      <div class="modal-none" id="quizz">
+        <div class="modal-container quizz">
+          <div class="modal-width">
+            <form id="quizz-form" method="get">
+              <h3>Should you move abroad?</h3>
+              <p>Do you like to travel abroad?</p>
+              <label>
+                <input name="q1" type="radio" id="q-1" required class="yes" />
+                Yes</label
+              >
+              <label
+                ><input name="q1" type="radio" id="q-1" class="no" />No</label
+              >
+              <p><strong>Do you like foreign food?</strong></p>
+              <label>
+                <input name="q2" type="radio" id="q-2" required class="yes" />
+                Yes</label
+              >
+              <label
+                ><input name="q2" type="radio" id="q-2" class="no" />No</label
+              >
+              <p><strong>Do you like moving?</strong></p>
+              <label>
+                <input name="q3" type="radio" id="q-3" required class="yes" />
+                Yes</label
+              >
+              <label
+                ><input name="q3" type="radio" id="q-3" class="no" />No</label
+              >
+              <p>
+                <strong>Do you find it easy to learn a new language?</strong>
+              </p>
+              <label>
+                <input name="q4" type="radio" id="q-4" required class="yes" />
+                Yes</label
+              >
+              <label
+                ><input name="q4" type="radio" id="q-4" class="no" />No</label
+              >
+              <p><strong>Could you leave your loved once behind?</strong></p>
+              <label>
+                <input name="q5" type="radio" id="q-5" required class="yes" />
+                Yes</label
+              >
+              <label
+                ><input name="q5" type="radio" id="q-5" class="no" />No</label
+              >
+              <div>
+                <button type="submit">Get my answer</button>
+              </div>
+            </form>
+            <!-- Font Awesome X -->
+            <i class="fa-solid fa-xmark" onclick="quizzModal()"></i>
+          </div>
         </div>
-           </form>
-        </div>
-        
+      </div>
+    </section>
 
-      </div>
-      </div>
-     </section>
-     
-     <!--contact modal -->
-     <section class="modal-wrapper">
+    <!--contact modal -->
+    <section class="modal-wrapper">
       <div class="contact-container contact-box" id="contact">
         <h3>Hello!</h3>
         <i class="fa-solid fa-xmark" onclick="contactModal()"></i>
-        <p>Please leave me a message and I will get back to you as soon as possible.</p>
-        <input class="contact" id="name" name="name" type="text" placeholder="Your name" autocomplete="given-name" required>
-        <input class="contact" id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
-        <textarea class="contact" id="message" name="message" rows="5" placeholder="Message" required></textarea>
+        <p>
+          Please leave me a message and I will get back to you as soon as
+          possible.
+        </p>
+        <input
+          class="contact"
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Your name"
+          autocomplete="given-name"
+          required
+        />
+        <input
+          class="contact"
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Email"
+          autocomplete="email"
+          required
+        />
+        <textarea
+          class="contact"
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Message"
+          required
+        ></textarea>
       </div>
-     </section>
+    </section>
 
-
-     <!-- This div is so there is enough space behind-->
-    <div class="space main-section">
-      
-      </div>
+    <!-- This div is so there is enough space behind-->
+    <div class="space main-section"></div>
 
     <!-- js script-->
     <script src="./js/app.js"></script>

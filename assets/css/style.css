@@ -6,22 +6,46 @@ body {
     background-color: #6d7f71;
 }
 
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navbar-box {
+    z-index: 95;
+    background-color: rgba(109, 127, 113, 0.7);
+    position: fixed;
+    width: 30%;
+    left: 0;
+    text-align: left;
+    padding-top: 5px;
+    display: block;
+}
+
 .burger {
     color: white;
     font-size: 1.5em;
-    opacity: 50%;
     position: fixed;
     top: 0;
-    right: 0;
-    display: block;
+    left: 0;
     z-index: 95;
-    padding: 10px 8px;
+    margin-bottom: 20px;
+}
+
+.navbar-box button {
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 15px;
+    padding-bottom: 5px;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-content: center;
+    top: 0;
 }
 
 .content-wrapper {
@@ -55,7 +79,6 @@ h1, h2, h3 {
 p {
     color: white;
     font-family: "roboto", "san-serif";
-    text-align: center;
 }
 
 .first-text {
@@ -64,7 +87,7 @@ p {
     width: 90%;
 }
 
-button {
+.buttons {
     font-family: "roboto", "san-serif";
     color: white;
     background-color: #242d4e;
@@ -148,6 +171,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     background-color: #6d7f71;
     width: 90%;
@@ -156,6 +180,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .modal-width {
@@ -174,7 +199,12 @@ footer {
 
 .fa-xmark {
     color: white;
-    padding: 5px;
+    padding: 20px;
+}
+
+label {
+    color: white;
+    font-family: "roboto";
 }
 
 .contact {
@@ -236,12 +266,22 @@ footer {
         max-height: 25em;
     }
      .image-footer {
-        max-height: 14em;
+        max-height: 12em;
     }
     .caroulse-container {
         width: 60%;
     }
+    .first-text {
+        margin: 5px;
+    }
     
 }
 
-@media (min-width: 1440px)
+@media (min-width: 1440px) {
+     .image-header{
+        max-height: 25em;
+    }
+     .image-footer {
+        max-height: 11.8em;
+    }
+}
