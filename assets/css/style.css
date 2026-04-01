@@ -19,9 +19,10 @@ body {
     width: 30%;
     left: 0;
     text-align: left;
-    margin-top: 27px;
+    margin-top: 29px;
     margin-left: 10px;
     display: block;
+    border-radius: 10%;
 }
 
 .burger {
@@ -171,7 +172,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
     background-color: #6d7f71;
     width: 90%;
@@ -185,6 +185,7 @@ footer {
 
 .modal-width {
     width: 100%;
+    text-align: center;
 }
 
 .modal-container img {
@@ -194,7 +195,10 @@ footer {
 
 .author-text {
     font-size: 15px;
-    width: 90%;
+    width: 80%;
+    margin: 10px auto 15px auto;
+    text-align: center;
+    
 }
 
 .fa-xmark {
