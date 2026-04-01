@@ -21,7 +21,7 @@ body {
     text-align: left;
     margin-top: 29px;
     margin-left: 10px;
-    display: block;
+    display: none;
     border-radius: 10%;
 }
 
@@ -162,10 +162,6 @@ footer {
     width: 100%;
     max-width: 1000px;
     padding: 0;
-}
-
-.modal-none {
-    display: none;
 }
 
 .modal-container {

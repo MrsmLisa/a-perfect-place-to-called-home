@@ -1,4 +1,16 @@
 
+/* navbar burger */
+function navbarBurger() {
+    let navbarButton = document.getElementById("burger")
+    
+    if (navbarButton.style.display === "none") {
+        navbarButton.style.display = "block"
+    } else {
+        navbarButton.style.display = "none"
+    }
+}
+
+
 /* Read me buttons move down to carousel */
 
 function readMe() {

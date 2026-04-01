@@ -24,14 +24,14 @@
     <!-- Nav-bar -->
     <section>
       <div class="navbar-container">
-        <div class="navbar-box">
+        <div>
         <!-- Font Awsome burger-->
-          <i class="fa-solid fa-bars burger"></i>
+          <i class="fa-solid fa-bars burger" onclick="navbarBurger()"></i>
           </div>
-        <div class="navbar-box">
-          <button><strong>AUTHOR</strong></button>
-          <button><strong>QUIZZ</strong></button>
-          <button><strong>CONTACT</strong></button>
+        <div class="navbar-box" id="burger">
+          <button onclick="authorModal()"><strong>AUTHOR</strong></button>
+          <button onclick="quizzModal()"><strong>QUIZZ</strong></button>
+          <button  onclick="contactModal()"><strong>CONTACT</strong></button>
         </div>
       </div>
     </section>
@@ -152,7 +152,7 @@
     <!-- About the author modul -->
 
     <section class="modal-wrapper">
-      <div class="modal-none author" id="author">
+      <div class="author" id="author" style="display: none;">
         <div class="modal-container">
           <div class="modal-width">
             <img src="./assets/images/julia.png" alt="picture of the author" />
@@ -180,7 +180,7 @@
     </section>
     <!-- Quizz modul -->
     <section class="modal-wrapper">
-      <div class="modal-none" id="quizz">
+      <div style="display: none;" id="quizz">
         <div class="modal-container quizz">
           <div class="modal-width">
             <form id="quizz-form" method="get">
@@ -240,7 +240,9 @@
 
     <!--contact modal -->
     <section class="modal-wrapper">
-      <div class="contact-container contact-box" id="contact">
+      <div style="display: none;"  id="contact">
+      <div class="modal-container contact-box">
+        <div class="modal-width">
         <h3>Hello!</h3>
         <i class="fa-solid fa-xmark" onclick="contactModal()"></i>
         <p>
@@ -273,6 +275,8 @@
           placeholder="Message"
           required
         ></textarea>
+        </div>
+      </div>
       </div>
     </section>
 
