@@ -19,7 +19,8 @@ body {
     width: 30%;
     left: 0;
     text-align: left;
-    padding-top: 5px;
+    margin-top: 27px;
+    margin-left: 10px;
     display: block;
 }
 
@@ -30,7 +31,7 @@ body {
     top: 0;
     left: 0;
     z-index: 95;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .navbar-box button {
@@ -45,7 +46,6 @@ header {
     display: flex;
     justify-content: center;
     align-content: center;
-    top: 0;
 }
 
 .content-wrapper {
@@ -95,7 +95,7 @@ p {
     width: 130px;
     padding: 12px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .squiggle {
@@ -206,6 +206,7 @@ label {
     color: white;
     font-family: "roboto";
 }
+
 
 .contact {
     width: 70%;
