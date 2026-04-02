@@ -72,11 +72,6 @@ function prev() {
 
 function authorModal() {
     let authorM = document.getElementById("author")
-    /* line below (window line, not the if) from Claude AI to fix the 
-    bug with the button needing to be pressed twice to work.
-    same line is used on the quizz and contact modal*/
-
-    let currentDisplay = window.getComputedStyle(authorM).display;
     
     if (authorM.style.display === "none") {
         authorM.style.display = "block"
@@ -89,8 +84,6 @@ function authorModal() {
 
 function quizzModal() {
     let quizzM = document.getElementById("quizz")
-
-    let currentDisplay = window.getComputedStyle(authorM).display;
 
     if (quizzM.style.display === "none") {
         quizzM.style.display = "block"
@@ -124,8 +117,6 @@ document.getElementById("quizz-form").addEventListener("submit", quizzAnswer)
 /* Contact modal */
 function contactModal() {
     let contactM = document.getElementById("contact")
-
-    let currentDisplay = window.getComputedStyle(authorM).display;
 
     if (contactM.style.display === "none") {
         contactM.style.display = "block"
