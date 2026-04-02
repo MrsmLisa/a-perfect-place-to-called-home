@@ -2,8 +2,11 @@
 /* navbar burger */
 function navbarBurger() {
     let navbarButton = document.getElementById("burger")
+    /* Claude Ai done the window.get line to fix the problem with 
+    having to press the buttons twice to make them work */
+    let navbarNone = window.getComputedStyle(navbarButton).display
     
-    if (navbarButton.style.display === "none") {
+    if (navbarNone === "none") {
         navbarButton.style.display = "block"
     } else {
         navbarButton.style.display = "none"
@@ -72,8 +75,9 @@ function prev() {
 
 function authorModal() {
     let authorM = document.getElementById("author")
+    let authorNone = window.getComputedStyle(authorM).display
     
-    if (authorM.style.display === "none") {
+    if (authorNone === "none") {
         authorM.style.display = "block"
     } else {
         authorM.style.display = "none"
@@ -84,8 +88,9 @@ function authorModal() {
 
 function quizzModal() {
     let quizzM = document.getElementById("quizz")
+    let quizzNone = window.getComputedStyle(quizzM).display
 
-    if (quizzM.style.display === "none") {
+    if (quizzNone === "none") {
         quizzM.style.display = "block"
     } else {
         quizzM.style.display = "none"
@@ -117,8 +122,9 @@ document.getElementById("quizz-form").addEventListener("submit", quizzAnswer)
 /* Contact modal */
 function contactModal() {
     let contactM = document.getElementById("contact")
+    let contactNone = window.getComputedStyle(contactM).display
 
-    if (contactM.style.display === "none") {
+    if (contactNone === "none") {
         contactM.style.display = "block"
     } else {
         contactM.style.display = "none"

@@ -140,6 +140,7 @@
           <div class="main-section arrows">
             <button class="buttons" onclick="authorModal()">About</button>
             <button class="buttons" onclick="quizzModal()">Quizz</button>
+            <button class="buttons" onclick="contactModal()">Contact</button>
           </div>
         </div>
       </section>
@@ -155,9 +156,10 @@
       <div class="author" id="author">
         <div class="modal-container">
           <div class="modal-width">
+            <h3 class="contact-h3">Julia Nascimento</h3>
             <img src="./assets/images/julia.png" alt="picture of the author" />
             <p class="author-text">
-              Julia Nascimento is a Brazilian illustrator and cartoonist with
+              Julia is a Brazilian illustrator and cartoonist with
               art, fashion, and research backgrounds. Employing a
               multidisciplinary and multicultural approach to her work, she is
               passionate about autobiographical narratives and collaborations.
@@ -184,7 +186,7 @@
         <div class="modal-container quizz">
           <div class="modal-width">
             <form id="quizz-form" method="get">
-              <h3>Should you move abroad?</h3>
+              <h3 class="contact-h3">Should you move abroad?</h3>
               <p>Do you like to travel abroad?</p>
               <label>
                 <input name="q1" type="radio" id="q-1" required class="yes" />
@@ -274,8 +276,9 @@
               placeholder="Message"
               required
             ></textarea>
-             <i class="fa-solid fa-xmark" onclick="contactModal()"></i>
-
+            <div>
+              <a href="" type="submit" class="buttons" onclick="contactModal()">Submit</a>
+            </div>
           </div>
         </div>
       </div>
