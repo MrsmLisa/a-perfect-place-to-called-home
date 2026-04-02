@@ -22,7 +22,6 @@
 
   <body>
     <!-- Nav-bar -->
-    <section>
       <div class="navbar-container">
         <!-- Header-->
         <header>
@@ -39,7 +38,6 @@
           <button onclick="contactModal()"><strong>CONTACT</strong></button>
         </div>
       </div>
-    </section>
 
     <!-- Main -->
     <main>
@@ -71,57 +69,56 @@
             src="./assets/images/dotts.png"
             alt="Dots in a squrly line moving down"
             class="squiggle"
-            id="dotts"
           />
         </div>
         <!-- Carousel -->
         <div class="caroulse-container main-section" id="carousel">
           <!-- images -->
           <div class="carousel-image">
-            <h3>Year-after disasters</h3>
+            <h2>Year-after disasters</h2>
             <img src="assets/images/comic1.webp" alt="image 1" />
             <img src="assets/images/comic2.webp" alt="image 2" />
           </div>
           <div class="carousel-image">
-            <h3>Year-after disasters</h3>
+            <h2>Year-after disasters</h2>
             <img src="assets/images/comic3.webp" alt="image 3" />
             <img src="assets/images/comic4.webp" alt="image 4" />
           </div>
           <div class="carousel-image">
-            <h3>Year-after disasters</h3>
+            <h2>Year-after disasters</h2>
             <img src="assets/images/comic5.webp" alt="image 5" />
             <img src="assets/images/comic6.webp" alt="image 6" />
           </div>
           <div class="carousel-image">
-            <h3>In bloom</h3>
+            <h2>In bloom</h2>
             <img src="assets/images/comic7.webp" alt="image 7" />
             <img src="assets/images/comic8.webp" alt="image 8" />
           </div>
           <div class="carousel-image">
-            <h3>In bloom</h3>
+            <h2>In bloom</h2>
             <img src="assets/images/comic9.webp" alt="image 9" />
             <img src="assets/images/comic10.webp" alt="image 10" />
           </div>
           <div class="carousel-image">
-            <h3>In bloom</h3>
+            <h2>In bloom</h2>
             <img src="assets/images/comic11.webp" alt="image 11" />
             <img src="assets/images/comic12.webp" alt="image 12" />
           </div>
           <div class="carousel-image">
-            <h3>In bloom</h3>
+            <h2>In bloom</h2>
             <img src="assets/images/comic13.webp" alt="image 13" />
             <img src="assets/images/comic14.webp" alt="image 14" />
           </div>
 
           <!-- buttons and dotts from Font Awesome-->
           <div class="arrows">
-            <i class="fa-solid fa-circle dotts" id="dotts"></i>
-            <i class="fa-solid fa-circle dotts" id="dotts"></i>
-            <i class="fa-solid fa-circle dotts" id="dotts"></i>
-            <i class="fa-solid fa-circle dotts" id="dotts"></i>
-            <i class="fa-solid fa-circle dotts" id="dotts"></i>
-            <i class="fa-solid fa-circle dotts" id="dotts"></i>
-            <i class="fa-solid fa-circle dotts" id="dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
           </div>
 
           <div class="arrows">
@@ -189,45 +186,45 @@
               <h3 class="contact-h3">Should you move abroad?</h3>
               <p>Do you like to travel abroad?</p>
               <label>
-                <input name="q1" type="radio" id="q-1" required class="yes" />
+                <input name="q1" type="radio" required class="yes" />
                 Yes</label
               >
               <label
-                ><input name="q1" type="radio" id="q-1" class="no" />No</label
+                ><input name="q1" type="radio" class="no" />No</label
               >
               <p><strong>Do you like foreign food?</strong></p>
               <label>
-                <input name="q2" type="radio" id="q-2" required class="yes" />
+                <input name="q2" type="radio" required class="yes" />
                 Yes</label
               >
               <label
-                ><input name="q2" type="radio" id="q-2" class="no" />No</label
+                ><input name="q2" type="radio" class="no" />No</label
               >
               <p><strong>Do you like moving?</strong></p>
               <label>
-                <input name="q3" type="radio" id="q-3" required class="yes" />
+                <input name="q3" type="radio" required class="yes" />
                 Yes</label
               >
               <label
-                ><input name="q3" type="radio" id="q-3" class="no" />No</label
+                ><input name="q3" type="radio" class="no" />No</label
               >
               <p>
                 <strong>Do you find it easy to learn a new language?</strong>
               </p>
               <label>
-                <input name="q4" type="radio" id="q-4" required class="yes" />
+                <input name="q4" type="radio" required class="yes" />
                 Yes</label
               >
               <label
-                ><input name="q4" type="radio" id="q-4" class="no" />No</label
+                ><input name="q4" type="radio" class="no" />No</label
               >
               <p><strong>Could you leave your loved once behind?</strong></p>
               <label>
-                <input name="q5" type="radio" id="q-5" required class="yes" />
+                <input name="q5" type="radio" required class="yes" />
                 Yes</label
               >
               <label
-                ><input name="q5" type="radio" id="q-5" class="no" />No</label
+                ><input name="q5" type="radio" class="no" />No</label
               >
               <div>
                 <button type="submit" class="buttons">Get my answer</button>
@@ -242,11 +239,12 @@
 
     <!--contact modal -->
     <section class="modal-wrapper">
-      <div id="contact">
+      <div id="contact"  id="contactSubmit">
         <div class="modal-container contact-box">
           <div class="modal-width">
             <h3 class="contact-h3">Hello!</h3>
-            <p>
+            <form id="contactForm" method="get">
+            <p class="contact">
               Please leave me a message and I will get back to you as soon as
               possible.
             </p>
@@ -258,6 +256,7 @@
               placeholder="Your name"
               autocomplete="given-name"
               required
+              style="color: black;"
             />
             <input
               class="contact"
@@ -267,6 +266,7 @@
               placeholder="Email"
               autocomplete="email"
               required
+              style="color: black;"
             />
             <textarea
               class="contact"
@@ -275,9 +275,15 @@
               rows="5"
               placeholder="Message"
               required
+              style="color: black;"
             ></textarea>
             <div>
-              <a href="" type="submit" class="buttons" onclick="contactModal()">Submit</a>
+              <button class="buttons" type="submit" onclick="contactButton()">Submit</button>
+            </div>
+            </form>
+            <div>
+              <!-- Font Awesome X -->
+            <i class="fa-solid fa-xmark" onclick="contactModal()"></i>
             </div>
           </div>
         </div>

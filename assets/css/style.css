@@ -90,7 +90,7 @@ h1, h2, h3 {
     font-family: "roboto", "san-serif";
     text-align: center;
     margin: 0 10px;
-    width: 80%;
+    width: 90%;
 }
 
 .main-title {
@@ -139,7 +139,8 @@ p {
     padding-top: 10px;
 }
 
-.carousel-image h3 {
+.carousel-image h2 {
+    text-align: center;
     color: black;
     margin: 5px;
 }

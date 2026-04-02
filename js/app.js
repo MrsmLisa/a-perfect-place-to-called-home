@@ -131,8 +131,10 @@ function contactModal() {
     }
 }
 
+/* contact button */
+function contactButton(event) {
+    event.preventDefault()
+    alert("Your message has been sent.")
+}
+document.getElementById("contactForm").addEventListener("submit", contactButton)
 
-/* dotts
-
-pick up all the dots 
-for loop */ 
