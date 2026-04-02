@@ -25,22 +25,21 @@
     <section>
       <div class="navbar-container">
         <!-- Header-->
-    <header>
-      <img src="./assets/images/header2.webp" class="image-header" alt="" />
-    </header>
-      
-        <div class="navbar-box">
-        <!-- Font Awsome burger-->
+        <header>
+          <img src="./assets/images/header2.webp" class="image-header" alt="" />
+        </header>
+
+        <div>
+          <!-- Font Awsome burger-->
           <i class="fa-solid fa-bars burger" onclick="navbarBurger()"></i>
-          </div>
-        <div class="navbar-box" id="burger" style="display: none;">
+        </div>
+        <div class="navbar-box" id="burger">
           <button onclick="authorModal()"><strong>AUTHOR</strong></button>
           <button onclick="quizzModal()"><strong>QUIZZ</strong></button>
-          <button  onclick="contactModal()"><strong>CONTACT</strong></button>
+          <button onclick="contactModal()"><strong>CONTACT</strong></button>
         </div>
       </div>
     </section>
-  
 
     <!-- Main -->
     <main>
@@ -150,11 +149,10 @@
     <footer>
       <img src="./assets/images/footer2.webp" class="image-footer" alt="" />
     </footer>
-
     <!-- About the author modul -->
 
     <section class="modal-wrapper">
-      <div class="author" id="author" style="display: none;">
+      <div class="author" id="author">
         <div class="modal-container">
           <div class="modal-width">
             <img src="./assets/images/julia.png" alt="picture of the author" />
@@ -182,7 +180,7 @@
     </section>
     <!-- Quizz modul -->
     <section class="modal-wrapper">
-      <div style="display: none;" id="quizz">
+      <div id="quizz">
         <div class="modal-container quizz">
           <div class="modal-width">
             <form id="quizz-form" method="get">
@@ -242,43 +240,44 @@
 
     <!--contact modal -->
     <section class="modal-wrapper">
-      <div style="display: none;"  id="contact">
-      <div class="modal-container contact-box">
-        <div class="modal-width">
-        <h3>Hello!</h3>
-        <i class="fa-solid fa-xmark" onclick="contactModal()"></i>
-        <p>
-          Please leave me a message and I will get back to you as soon as
-          possible.
-        </p>
-        <input
-          class="contact"
-          id="name"
-          name="name"
-          type="text"
-          placeholder="Your name"
-          autocomplete="given-name"
-          required
-        />
-        <input
-          class="contact"
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Email"
-          autocomplete="email"
-          required
-        />
-        <textarea
-          class="contact"
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="Message"
-          required
-        ></textarea>
+      <div id="contact">
+        <div class="modal-container contact-box">
+          <div class="modal-width">
+            <h3 class="contact-h3">Hello!</h3>
+            <p>
+              Please leave me a message and I will get back to you as soon as
+              possible.
+            </p>
+            <input
+              class="contact"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              autocomplete="given-name"
+              required
+            />
+            <input
+              class="contact"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+            <textarea
+              class="contact"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Message"
+              required
+            ></textarea>
+             <i class="fa-solid fa-xmark" onclick="contactModal()"></i>
+
+          </div>
         </div>
-      </div>
       </div>
     </section>
 

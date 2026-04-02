@@ -24,6 +24,8 @@ body {
     text-align: left;
     margin-top: 29px;
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .burger {
@@ -182,7 +184,7 @@ footer {
     flex-direction: column;
     background-color: #6d7f71;
     width: 90%;
-    height: 90%;
+    height: auto;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -197,7 +199,7 @@ footer {
 
 .modal-container img {
     width: 75%;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .author-text {
@@ -213,6 +215,10 @@ footer {
     padding: 20px;
 }
 
+.contact-h3 {
+    margin-top: 10px;
+}
+
 label {
     color: white;
     font-family: "roboto";
@@ -220,7 +226,7 @@ label {
 
 
 .contact {
-    width: 70%;
+    width: 80%;
     padding: 5px;
     margin: 10px;
     color: white;
@@ -258,13 +264,13 @@ label {
         width: 50%;
     }
      .image-footer {
-        max-height: 15em;
+        max-height: 9em;
     }
     .carousel-image img {
     width: 45%; 
     }
     .contact {
-        width: 40%;
+        
     }
     .main-row {
     flex-direction: row;
