@@ -111,9 +111,9 @@ for (i=0; i < yesAnswer.length; i++) {
 }   
 console.log(answer)
 if (answer >=3) {
-    alert("yes")
+    alert("You should move to another contry, go for it!")
 } else {
-    alert("no")
+    alert("You should stay in your own contry, moving is annoying anyway.")
 }
 return
 }
