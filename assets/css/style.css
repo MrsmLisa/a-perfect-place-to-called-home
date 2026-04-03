@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #6d7f71;
+    background-color: #586f5d;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -18,7 +18,7 @@ body {
 
 .navbar-box {
     z-index: 99;
-    background-color: rgba(109, 127, 113, 0.7);
+    background-color: rgba(88, 112, 94, 0.7);
     position: fixed;
     width: 30%;
     left: 0;
@@ -111,7 +111,7 @@ p {
 .buttons {
     font-family: "roboto", "san-serif";
     color: white;
-    background-color: #242d4e;
+    background-color: #151c33;
     border: none;
     width: 130px;
     padding: 12px;
@@ -124,7 +124,7 @@ p {
 }
 
 .space {
-    background-color: #6d7f71;
+    background-color: #586f5d;
     height: 20em;
 }
 
@@ -190,7 +190,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #6d7f71;
+    background-color: #586F5D;
     width: 90%;
     height: auto;
     position: fixed;
