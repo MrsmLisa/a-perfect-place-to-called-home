@@ -35,7 +35,6 @@ body {
     font-size: 1.5em;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 95;
     margin: 10px;
 }
@@ -227,6 +226,11 @@ footer {
     width: 80%;
     margin: 10px auto 15px auto;
     text-align: center;  
+}
+
+.fa-brands {
+    color: white;
+    font-size: 2em;
 }
 
 .fa-xmark {
