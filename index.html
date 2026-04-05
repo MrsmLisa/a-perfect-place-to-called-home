@@ -27,17 +27,17 @@
       <div class="navbar-container">
         <!-- Header-->
         <header>
-          <img src="./assets/images/header2.webp" class="image-header" alt="" />
+          <img src="./assets/images/header2.webp" class="image-header" alt="image of a landscape with grass, trees and mountain in the background during the sunset" />
         </header>
 
         <div class="navbar-display">
           <!-- Font Awsome burger-->
-          <i class="fa-solid fa-bars burger" onclick="navbarBurger()"></i>
+          <i class="fa-solid fa-bars burger" onclick="navbarBurger()" aria-label="Navigation button"></i>
         </div>
         <div class="navbar-box" id="burger">
-          <button onclick="authorModal()"><strong>AUTHOR</strong></button>
-          <button onclick="quizzModal()"><strong>QUIZZ</strong></button>
-          <button onclick="contactModal()"><strong>CONTACT</strong></button>
+          <button onclick="authorModal(); navbarBurger()"><strong>AUTHOR</strong></button>
+          <button onclick="quizzModal(); navbarBurger()"><strong>QUIZZ</strong></button>
+          <button onclick="contactModal(); navbarBurger()"><strong>CONTACT</strong></button>
         </div>
       </div>
 
@@ -78,38 +78,38 @@
           <!-- images -->
           <div class="carousel-image">
             <p><strong>YEAR-AFTER DISASTERS</strong></p>
-            <img src="assets/images/comic1.webp" alt="image 1" />
-            <img src="assets/images/comic2.webp" alt="image 2" />
+            <img src="assets/images/comic1.webp" alt="A map of the world" />
+            <img src="assets/images/comic2.webp" alt="People speaking japanies" />
           </div>
           <div class="carousel-image">
             <p><strong>YEAR-AFTER DISASTERS</strong></p>
-            <img src="assets/images/comic3.webp" alt="image 3" />
-            <img src="assets/images/comic4.webp" alt="image 4" />
+            <img src="assets/images/comic3.webp" alt="Image of Julia speaking" />
+            <img src="assets/images/comic4.webp" alt="Image of a neucliar powerplant and people in protective gear" />
           </div>
           <div class="carousel-image">
             <p><strong>YEAR-AFTER DISASTERS</strong></p>
-            <img src="assets/images/comic5.webp" alt="image 5" />
-            <img src="assets/images/comic6.webp" alt="image 6" />
+            <img src="assets/images/comic5.webp" alt="A hospital room with people in protective gear" />
+            <img src="assets/images/comic6.webp" alt="Julia thinking in bed" />
           </div>
           <div class="carousel-image">
             <p><strong>IN BLOOM</strong></p>
-            <img src="assets/images/comic7.webp" alt="image 7" />
-            <img src="assets/images/comic8.webp" alt="image 8" />
+            <img src="assets/images/comic7.webp" alt="A hand with tickets" />
+            <img src="assets/images/comic8.webp" alt="Landscape with trees" />
           </div>
           <div class="carousel-image">
             <p><strong>IN BLOOM</strong></p>
-            <img src="assets/images/comic9.webp" alt="image 9" />
-            <img src="assets/images/comic10.webp" alt="image 10" />
+            <img src="assets/images/comic9.webp" alt="Lots of people on a busy street" />
+            <img src="assets/images/comic10.webp" alt="City landscape with cherry trees" />
           </div>
           <div class="carousel-image">
             <p><strong>IN BLOOM</strong></p>
-            <img src="assets/images/comic11.webp" alt="image 11" />
-            <img src="assets/images/comic12.webp" alt="image 12" />
+            <img src="assets/images/comic11.webp" alt="People playing the drums" />
+            <img src="assets/images/comic12.webp" alt="Lots of people on a busy city street" />
           </div>
           <div class="carousel-image">
             <p><strong>IN BLOOM</strong></p>
-            <img src="assets/images/comic13.webp" alt="image 13" />
-            <img src="assets/images/comic14.webp" alt="image 14" />
+            <img src="assets/images/comic13.webp" alt="A sign for an amusement park" />
+            <img src="assets/images/comic14.webp" alt="A fot trying on sandals that are to small" />
           </div>
 
           <!-- buttons and dotts from Font Awesome-->
@@ -126,11 +126,11 @@
           <div class="arrows">
             <i
               class="fa-solid fa-circle-chevron-left arrows"
-              onclick="prev()"
+              onclick="prev()" aria-label="view the previus image"
             ></i>
             <i
               class="fa-solid fa-circle-chevron-right arrows"
-              onclick="next()"
+              onclick="next()" aria-label="view the next image"
             ></i>
           </div>
         </div>
@@ -184,7 +184,7 @@
                
             </div>
             <!-- Font Awesome X -->
-            <i class="fa-solid fa-xmark" onclick="authorModal()"></i>
+            <i class="fa-solid fa-xmark" onclick="authorModal()" aria-label="Close the modal"></i>
           </div>
         </div>
       </div>
@@ -239,11 +239,11 @@
                 ><input name="q5" type="radio" class="no" />No</label
               >
               <div>
-                <button type="submit" class="buttons">Get my answer</button>
+                <button type="submit" class="buttons" onclick="quizzModal()">Get my answer</button>
               </div>
             </form>
             <!-- Font Awesome X -->
-            <i class="fa-solid fa-xmark" onclick="quizzModal()"></i>
+            <i class="fa-solid fa-xmark" onclick="quizzModal()" aria-label="Close the modal"></i>
           </div>
         </div>
       </div>
@@ -305,7 +305,7 @@
             </div>
             <div>
               <!-- Font Awesome X -->
-            <i class="fa-solid fa-xmark" onclick="contactModal()"></i>
+            <i class="fa-solid fa-xmark" onclick="contactModal()" aria-label="Close the modal"></i>
             </div>
           </div>
         </div>
