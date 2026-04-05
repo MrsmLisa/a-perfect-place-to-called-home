@@ -110,12 +110,18 @@ p {
 .buttons {
     font-family: "roboto", "san-serif";
     color: white;
+    font-size: small;
     background-color: #151c33;
     border: none;
     width: 130px;
     padding: 12px;
     border-radius: 20px;
-    margin: 20px 5px;
+    margin-top: 9px;
+    text-decoration: none;
+}
+
+.b-quizz {
+    margin: 20px;
 }
 
 .squiggle {
@@ -164,6 +170,9 @@ p {
 .arrows {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     padding: 5px;
 }
 
@@ -228,10 +237,10 @@ footer {
     text-align: center;  
 }
 
-.fa-brands {
+.symbols {
     color: white;
     font-size: 2em;
-    margin-bottom: 10px;
+    margin: 20px 10px;
 }
 
 .fa-xmark {
@@ -283,6 +292,7 @@ label {
         max-height: 7em;
         height: auto;
     }
+
     
 }
 

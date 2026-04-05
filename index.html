@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A perfect place to call home</title>
     <!-- Favicon -->
-     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <!-- css script -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Google fonts -->
@@ -24,22 +24,51 @@
 
   <body>
     <!-- Nav-bar -->
-      <div class="navbar-container">
-        <!-- Header-->
-        <header>
-          <img src="./assets/images/header1.webp" class="image-header" alt="image of a landscape with grass, trees and mountain in the background during the sunset" />
-        </header>
+    <div class="navbar-container">
+      <!-- Header-->
+      <header>
+        <img
+          src="./assets/images/header1.webp"
+          class="image-header"
+          alt="image of a landscape with grass, trees and mountain in the background during the sunset"
+        />
+      </header>
 
-        <div class="navbar-display">
-          <!-- Font Awsome burger-->
-          <i class="fa-solid fa-bars burger" onclick="navbarBurger()" aria-label="Navigation button"></i>
-        </div>
-        <div class="navbar-box" id="burger">
-          <button onclick="authorModal(); navbarBurger()"><strong>AUTHOR</strong></button>
-          <button onclick="quizzModal(); navbarBurger()"><strong>QUIZZ</strong></button>
-          <button onclick="contactModal(); navbarBurger()"><strong>CONTACT</strong></button>
-        </div>
+      <div class="navbar-display">
+        <!-- Font Awsome burger-->
+        <i
+          class="fa-solid fa-bars burger"
+          onclick="navbarBurger()"
+          aria-label="Navigation button"
+        ></i>
       </div>
+      <div class="navbar-box" id="burger">
+        <button
+          onclick="
+            authorModal();
+            navbarBurger();
+          "
+        >
+          <strong>AUTHOR</strong>
+        </button>
+        <button
+          onclick="
+            quizzModal();
+            navbarBurger();
+          "
+        >
+          <strong>QUIZZ</strong>
+        </button>
+        <button
+          onclick="
+            contactModal();
+            navbarBurger();
+          "
+        >
+          <strong>CONTACT</strong>
+        </button>
+      </div>
+    </div>
 
     <!-- Main -->
     <main>
@@ -79,16 +108,28 @@
           <div class="carousel-image">
             <p><strong>YEAR-AFTER DISASTERS</strong></p>
             <img src="assets/images/comic1.webp" alt="A map of the world" />
-            <img src="assets/images/comic2.webp" alt="People speaking japanies" />
+            <img
+              src="assets/images/comic2.webp"
+              alt="People speaking japanies"
+            />
           </div>
           <div class="carousel-image">
             <p><strong>YEAR-AFTER DISASTERS</strong></p>
-            <img src="assets/images/comic3.webp" alt="Image of Julia speaking" />
-            <img src="assets/images/comic4.webp" alt="Image of a neucliar powerplant and people in protective gear" />
+            <img
+              src="assets/images/comic3.webp"
+              alt="Image of Julia speaking"
+            />
+            <img
+              src="assets/images/comic4.webp"
+              alt="Image of a neucliar powerplant and people in protective gear"
+            />
           </div>
           <div class="carousel-image">
             <p><strong>YEAR-AFTER DISASTERS</strong></p>
-            <img src="assets/images/comic5.webp" alt="A hospital room with people in protective gear" />
+            <img
+              src="assets/images/comic5.webp"
+              alt="A hospital room with people in protective gear"
+            />
             <img src="assets/images/comic6.webp" alt="Julia thinking in bed" />
           </div>
           <div class="carousel-image">
@@ -98,18 +139,36 @@
           </div>
           <div class="carousel-image">
             <p><strong>IN BLOOM</strong></p>
-            <img src="assets/images/comic9.webp" alt="Lots of people on a busy street" />
-            <img src="assets/images/comic10.webp" alt="City landscape with cherry trees" />
+            <img
+              src="assets/images/comic9.webp"
+              alt="Lots of people on a busy street"
+            />
+            <img
+              src="assets/images/comic10.webp"
+              alt="City landscape with cherry trees"
+            />
           </div>
           <div class="carousel-image">
             <p><strong>IN BLOOM</strong></p>
-            <img src="assets/images/comic11.webp" alt="People playing the drums" />
-            <img src="assets/images/comic12.webp" alt="Lots of people on a busy city street" />
+            <img
+              src="assets/images/comic11.webp"
+              alt="People playing the drums"
+            />
+            <img
+              src="assets/images/comic12.webp"
+              alt="Lots of people on a busy city street"
+            />
           </div>
           <div class="carousel-image">
             <p><strong>IN BLOOM</strong></p>
-            <img src="assets/images/comic13.webp" alt="A sign for an amusement park" />
-            <img src="assets/images/comic14.webp" alt="A fot trying on sandals that are to small" />
+            <img
+              src="assets/images/comic13.webp"
+              alt="A sign for an amusement park"
+            />
+            <img
+              src="assets/images/comic14.webp"
+              alt="A fot trying on sandals that are to small"
+            />
           </div>
 
           <!-- buttons and dotts from Font Awesome-->
@@ -126,11 +185,13 @@
           <div class="arrows">
             <i
               class="fa-solid fa-circle-chevron-left arrows"
-              onclick="prev()" aria-label="view the previus image"
+              onclick="prev()"
+              aria-label="view the previus image"
             ></i>
             <i
               class="fa-solid fa-circle-chevron-right arrows"
-              onclick="next()" aria-label="view the next image"
+              onclick="next()"
+              aria-label="view the next image"
             ></i>
           </div>
         </div>
@@ -140,6 +201,12 @@
             <button class="buttons" onclick="authorModal()">About</button>
             <button class="buttons" onclick="quizzModal()">Quizz</button>
             <button class="buttons" onclick="contactModal()">Contact</button>
+            <a href="https://www.nsjulia.com/"
+                aria-label="Visit my website (opens in a new window)"
+                target="_blank" class="buttons">Website</a>
+            <a href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
+                aria-label="Buy my book (opens in a new window)"
+                target="_blank" class="buttons">Buy my book</a>
           </div>
         </div>
       </section>
@@ -157,15 +224,22 @@
           <div class="modal-width">
             <div class="x-mark">
               <!-- Font Awesome X -->
-            <i class="fa-solid fa-xmark" onclick="authorModal()" aria-label="Close the modal"></i>
+              <i
+                class="fa-solid fa-xmark"
+                onclick="authorModal()"
+                aria-label="Close the modal"
+              ></i>
             </div>
             <h3 class="contact-h3">Julia Nascimento</h3>
-            <img src="./assets/images/JuliaNascimento.webp" alt="picture of the author" />
+            <img
+              src="./assets/images/JuliaNascimento.webp"
+              alt="picture of the author"
+            />
             <p class="author-text">
-              Julia is a Brazilian illustrator and cartoonist with
-              art, fashion, and research backgrounds. Employing a
-              multidisciplinary and multicultural approach to her work, she is
-              passionate about autobiographical narratives and collaborations.
+              Julia is a Brazilian illustrator and cartoonist with art, fashion,
+              and research backgrounds. Employing a multidisciplinary and
+              multicultural approach to her work, she is passionate about
+              autobiographical narratives and collaborations.
             </p>
             <p class="author-text">
               While living in Japan for almost a decade she pursued postgraduate
@@ -179,13 +253,34 @@
             </p>
             <div>
               <!-- Font Awsome social media symbols -->
-              <a href="https://www.facebook.com/feijuadacomics" aria-label="Visit our Facebook (opens in a new window)" target="_blank"> 
-              <i class="fa-brands fa-facebook"></i>
+              <a
+                href="https://www.facebook.com/julia.nascim"
+                aria-label="Visit my Facebook (opens in a new window)"
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook symbols"></i>
               </a>
-              <a href="https://www.instagram.com/feijuadacomics" aria-label="Visit our Instagram (opens in a new window)" target="_blank"> 
-              <i class="fa-brands fa-instagram"></i>
+              <a
+                href="https://www.facebook.com/julia.nascim"
+                aria-label="Visit my Instagram (opens in a new window)"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram symbols"></i>
               </a>
-               
+              <a
+                href="https://www.nsjulia.com/"
+                aria-label="Visit my website (opens in a new window)"
+                target="_blank"
+              >
+                <i class="fa-solid fa-house-chimney-window symbols"></i>
+              </a>
+              <a
+                href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
+                aria-label="Buy my book (opens in a new window)"
+                target="_blank"
+              >
+                <i class="fa-solid fa-book symbols"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -196,9 +291,13 @@
       <div id="quizz">
         <div class="modal-container quizz">
           <div class="modal-width">
-             <div class="x-mark">
+            <div class="x-mark">
               <!-- Font Awesome X -->
-            <i class="fa-solid fa-xmark" onclick="quizzModal()" aria-label="Close the modal"></i>
+              <i
+                class="fa-solid fa-xmark"
+                onclick="quizzModal()"
+                aria-label="Close the modal"
+              ></i>
             </div>
             <form id="quizz-form" method="get">
               <h3 class="contact-h3">Should you move abroad?</h3>
@@ -207,25 +306,19 @@
                 <input name="q1" type="radio" required class="yes" />
                 Yes</label
               >
-              <label
-                ><input name="q1" type="radio" class="no" />No</label
-              >
+              <label><input name="q1" type="radio" class="no" />No</label>
               <p><strong>Do you like foreign food?</strong></p>
               <label>
                 <input name="q2" type="radio" required class="yes" />
                 Yes</label
               >
-              <label
-                ><input name="q2" type="radio" class="no" />No</label
-              >
+              <label><input name="q2" type="radio" class="no" />No</label>
               <p><strong>Do you like moving?</strong></p>
               <label>
                 <input name="q3" type="radio" required class="yes" />
                 Yes</label
               >
-              <label
-                ><input name="q3" type="radio" class="no" />No</label
-              >
+              <label><input name="q3" type="radio" class="no" />No</label>
               <p>
                 <strong>Do you find it easy to learn a new language?</strong>
               </p>
@@ -233,19 +326,17 @@
                 <input name="q4" type="radio" required class="yes" />
                 Yes</label
               >
-              <label
-                ><input name="q4" type="radio" class="no" />No</label
-              >
+              <label><input name="q4" type="radio" class="no" />No</label>
               <p><strong>Could you leave your loved once behind?</strong></p>
               <label>
                 <input name="q5" type="radio" required class="yes" />
                 Yes</label
               >
-              <label
-                ><input name="q5" type="radio" class="no" />No</label
-              >
+              <label><input name="q5" type="radio" class="no" />No</label>
               <div>
-                <button type="submit" class="buttons" onclick="quizzModal()">Get my answer</button>
+                <button type="submit" class="buttons b-quizz" onclick="quizzModal()">
+                  Get my answer
+                </button>
               </div>
             </form>
           </div>
@@ -258,61 +349,87 @@
       <div id="contact">
         <div class="modal-container contact-box">
           <div class="modal-width">
-             <div class="x-mark">
+            <div class="x-mark">
               <!-- Font Awesome X -->
-            <i class="fa-solid fa-xmark" onclick="contactButton()" aria-label="Close the modal"></i>
+              <i
+                class="fa-solid fa-xmark"
+                onclick="contactModal()"
+                aria-label="Close the modal"
+              ></i>
             </div>
             <h3 class="contact-h3">Hello!</h3>
             <form id="contactForm" method="get">
-            <p class="contact">
-              Please leave me a message and I will get back to you as soon as
-              possible.
-            </p>
-            <input
-              class="contact"
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Your name"
-              autocomplete="given-name"
-              required
-              style="color: black;"
-            />
-            <input
-              class="contact"
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              autocomplete="email"
-              required
-              style="color: black;"
-            />
-            <textarea
-              class="contact"
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Message"
-              required
-              style="color: black;"
-            ></textarea>
-            <div>
-              <button class="buttons" type="submit" onclick="contactButton()">Submit</button>
-            </div>
-            </form>
+              <p class="contact">
+                Please leave me a message and I will get back to you as soon as
+                possible.
+              </p>
+              <input
+                class="contact"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                autocomplete="given-name"
+                required
+                style="color: black"
+              />
+              <input
+                class="contact"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                autocomplete="email"
+                required
+                style="color: black"
+              />
+              <textarea
+                class="contact"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Message"
+                required
+                style="color: black"
+              ></textarea>
               <div>
-              <!-- Font Awsome social media symbols -->
-              <a href="https://www.facebook.com/feijuadacomics" aria-label="Visit our Facebook (opens in a new window)" target="_blank"> 
-              <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/feijuadacomics" aria-label="Visit our Instagram (opens in a new window)" target="_blank"> 
-              <i class="fa-brands fa-instagram"></i>
-              </a>
-               
-            </div>
+                <button class="buttons" type="submit" onclick="contactModal()">
+                  Submit
+                </button>
+              </div>
+            </form>
             <div>
+              <!-- Font Awsome social media symbols -->
+              <a
+                href="https://www.facebook.com/julia.nascim"
+                aria-label="Visit my Facebook (opens in a new window)"
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook symbols"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/julia.nascim"
+                aria-label="Visit my Instagram (opens in a new window)"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram symbols"></i>
+              </a>
+              <a
+                href="https://www.nsjulia.com/"
+                aria-label="Visit my website (opens in a new window)"
+                target="_blank"
+              >
+                <i class="fa-solid fa-house-chimney-window symbols"></i>
+              </a>
+              <a
+                href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
+                aria-label="Buy my book (opens in a new window)"
+                target="_blank"
+              >
+                <i class="fa-solid fa-book symbols"></i>
+              </a>
             </div>
+            <div></div>
           </div>
         </div>
       </div>
