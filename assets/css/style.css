@@ -37,6 +37,7 @@ body {
     top: 0;
     z-index: 95;
     margin: 10px;
+    cursor: pointer;
 }
 
 #burger {
@@ -122,6 +123,7 @@ p {
     display: inline-block;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .b-quizz {
@@ -135,6 +137,11 @@ p {
 .space {
     background-color: #586f5d;
     height: 20em;
+}
+
+.space2 {
+    background-color: #586f5d;
+    height: 7em;
 }
 
 .caroulse-container {
@@ -255,7 +262,7 @@ footer {
 
 .symbols {
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 20px 10px;
 }
 
@@ -335,8 +342,8 @@ label {
     .author-text {
         font-size: 15px;
     }
-    .buttons {
-        text-align: center;
+    .main-button {
+        width: 60%;
     }
 }
 
@@ -354,6 +361,9 @@ label {
         margin: 5px;
     }
     .modal-container {
+        width: 40%;
+    }
+    .main-button {
         width: 40%;
     }
     
