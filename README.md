@@ -3,11 +3,12 @@ Julia Nascimento is a Brazilian illustrator and cartoonist with art, fashion, an
 **A Perfect Place to Call Home** is Julia Nascimento’s first collection of visual narratives about her experiences and reflections of life in different places as a foreigner. 
 
 
-##1. User experience
+## 1. User experience
 The website it made for Julia Nascimentos new book A perfect place called home. Her goal is to attract more readers and have  a teaser to send to publishing companies.
 The site provides information about the book and Julia, a sample of the book that the viewer can read and a contact form to get in touch with Julia. There is also a quizz the viewer can take to see if they should move abroad.
 The target audiens for the site are potential readers and publishing companies.
-###1.1 User stories
+
+### 1.1 User stories
 As a first-time visitor:
  * I want to be able to find information quickly and without problem.
  * I want user-friendly design that works on different devises.
@@ -16,12 +17,12 @@ As a first-time visitor:
  * I want an easy way to get in contact with the author.
 
 ----
-##2. Design
-###2.1 Colour scheme
+## 2. Design
+### 2.1 Colour scheme
 As the website has large and colorful illustrations from Julias book I decided that I would only use a few colors for the rest of the site. The body is a green to look like grass and and I took the button colour from the dark trees in the left corner. The text is white exept for the modal with the comic. 
 
 
-###2.2 Typography
+### 2.2 Typography
 I have used the font Roboto from Google fonts for all the text on the website.
 
 <img width="816" height="160" alt="fonts" src="https://github.com/user-attachments/assets/29792d7c-989e-49df-9bcf-c28344feb3d8" />
@@ -29,22 +30,22 @@ I have used the font Roboto from Google fonts for all the text on the website.
 I have used Font Awesome for the social media icons.
 
 
-###2.3 Imagery
+### 2.3 Imagery
 All the images used are from Julias book but has been slightly modified by me with Julias concent.
 
 
-###2.4 Wireframes
+### 2.4 Wireframes
 I have used [Whimsical](https://whimsical.com/) to build the wireframes for the site.
 
 
-###2.5 Project planning
+### 2.5 Project planning
 
 ----
-##3. Features
+## 3. Features
 
-###3.1 General features
+### 3.1 General features
 
-###3.1.1 Nav-bar and footer
+### 3.1.1 Nav-bar and footer
 Because of the large picture at the top of the page I didnt want to take away from it by adding a full navbar. I used a burger icon from Font Awsome and added a small modal to appear when pushed. In the modal are buttons with links to the author, quizz and contact moduals. 
 
 
@@ -55,9 +56,10 @@ The footer is the the image from the bottom of the book. I made the background t
 <img width="826" height="279" alt="footer2" src="https://github.com/user-attachments/assets/8995202c-77ee-4870-b02c-20a05537b150" />
 
 
-###3.1.2 Index page
-the index page contains a hero section with the image of the top of the book. Under it is the title of the book and a short text and a image if the cover of the book. This allows the user to immediately understand the purpose of the website. At the bottom is a Read as sample - button that takes you further down the page to the carousel.
+### 3.1.2 Index page
+The index page contains a hero section with the image of the top of the book. Under it is the title of the book and a short text and a image if the cover of the book. This allows the user to immediately understand the purpose of the website. At the bottom is a Read as sample - button that takes you further down the page to the carousel.
 
+<img width="828" height="565" alt="header" src="https://github.com/user-attachments/assets/67c9dd0e-ac27-4262-8e13-fe9859376423" />
 
 
 I put in a slow scroll in CSS when you push the button so it takes you down an image with a squiggly line to represent the travel she made between the different countries. 
