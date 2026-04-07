@@ -22,21 +22,19 @@ body {
     position: fixed;
     width: 30%;
     left: 0;
-    text-align: left;
-    margin-top: 34px;
-    margin-left: 10px;
+    top: 60px;
     display: flex;
     flex-direction: column;
-    padding: 4px;
+    padding: 10px;
 }
 
 .burger {
     color: white;
     font-size: 1.5em;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 15px;
+    left: 15px;
     z-index: 95;
-    margin: 10px;
     cursor: pointer;
 }
 
@@ -55,9 +53,12 @@ body {
 header {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;
+    line-height: 0;
 }
 
 .image-header {
@@ -310,6 +311,8 @@ label {
    
     .image-header {
         width: 36em;
+        max-width: 100%;
+        height: auto;
     }
      .image-footer {
         max-height: 7em;
@@ -322,6 +325,8 @@ label {
 @media (min-width: 768px) {
     .image-header {
         width: 48em;
+        max-width: 100%;
+        height: auto;
     }
     .first-text{
         width: 50%;
@@ -345,11 +350,16 @@ label {
     .main-button {
         width: 60%;
     }
+    .space {
+        height: 25em;
+    }
 }
 
 @media (min-width: 1024px) {
     .image-header{
         width: 64em;
+        max-width: 100%;
+        height: auto;
     }
      .image-footer {
         max-height: 12em;
@@ -372,14 +382,16 @@ label {
 @media (min-width: 1440px) {
      .image-header{
         max-height: 25em;
+        width: 64em;
     }
      .image-footer {
         max-height: 11.8em;
     }
     .navbar-box {
-        margin-left: 19.5em;
+        margin-left: 0;
+        left: 10px;
     }
     .burger {
-        margin-left: 13em;
+        margin-left: 0;
     }
 }
