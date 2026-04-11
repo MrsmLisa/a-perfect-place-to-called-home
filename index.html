@@ -362,9 +362,9 @@
                 type="text"
                 placeholder="Your name"
                 autocomplete="given-name"
-                required
                 style="color: black"
               />
+              
               <input
                 class="contact"
                 id="email"
@@ -372,7 +372,6 @@
                 type="email"
                 placeholder="Email"
                 autocomplete="email"
-                required
                 style="color: black"
               />
               <textarea
@@ -381,11 +380,14 @@
                 name="message"
                 rows="5"
                 placeholder="Message"
-                required
                 style="color: black"
               ></textarea>
               <div>
-                <button class="buttons" type="submit" onclick="contactModal()">
+               
+                <p id="nameError" style="display: none;">Please enter your name.</p>
+                <p id="emailError" style="display: none;">Please enter your email.</p>
+                <p id="messageError" style="display: none;">Please enter a message.</p>
+                 <button class="buttons" type="submit" onclick="">
                   Submit
                 </button>
               </div>

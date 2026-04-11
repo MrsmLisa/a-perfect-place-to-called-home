@@ -131,10 +131,51 @@ function contactModal() {
     }
 }
 
-/* contact button */
+const form = document.getElementById("contactForm");
+const nameInput = document.getElementById("name");
+const nameErr = document.getElementById("nameError");
+const emailInput = document.getElementById("email");
+const emailErr = document.getElementById("emailError");
+const messageInput = document.getElementById("message");
+const messageErr = document.getElementById("messageError");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    nameErr.style.display = "none";
+    const name1 = nameInput.value;
+
+    let valid1 = name1==="";
+    if (valid1 === true) {
+        nameErr.style.display = "block"
+        return
+    };
+
+    emailErr.style.display ="none"
+    const email = emailInput.value;
+
+    let valid2 = email==="";
+    if (valid2 === true) {
+        emailErr.style.display = "block"
+        return
+    };
+
+    messageErr.style.display = "none";
+    const message = messageInput.value;
+
+    let valid3 = message==="";
+    if (valid3 === true) {
+        messageErr.style.display = "block"
+        return
+    }
+        
+});
+
+
+/* contact button 
 function contactButton(event) {
     event.preventDefault()
     alert("Your message has been sent.")
 }
-document.getElementById("contactForm").addEventListener("submit", contactButton)
+document.getElementById("contactForm").addEventListener("submit", contactButton)*/
 
