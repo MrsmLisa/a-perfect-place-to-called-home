@@ -238,6 +238,10 @@ footer {
     text-align: center;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 #author {
     display: none;
 }
@@ -296,6 +300,11 @@ label {
     margin: 10px;
     color: white;
     font-family: "roboto";
+}
+
+.success {
+    z-index: 98;
+    padding: 30px;
 }
 
 .contact-box {

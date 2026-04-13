@@ -42,25 +42,24 @@
       <div class="navbar-box" id="burger">
         <button
           onclick="
-            authorModal();
-            navbarBurger();
-          "
+            navbarBurger();"
+            id="openAuthor"
         >
           <strong>AUTHOR</strong>
         </button>
         <button
           onclick="
-            quizzModal();
             navbarBurger();
           "
+          id="openQuizz"
         >
           <strong>QUIZZ</strong>
         </button>
         <button
           onclick="
-            contactModal();
             navbarBurger();
           "
+          id="openContact"
         >
           <strong>CONTACT</strong>
         </button>
@@ -193,9 +192,9 @@
 
         <div class="space">
           <div class="main-section main-button">
-            <button class="buttons" onclick="authorModal()">About</button>
-            <button class="buttons" onclick="quizzModal()">Quizz</button>
-            <button class="buttons" onclick="contactModal()">Contact</button>
+            <button class="buttons" id="openAuthorButton">About</button>
+            <button class="buttons" id="openQuizzButton">Quizz</button>
+            <button class="buttons" id="openContactButton">Contact</button>
             <a href="https://www.nsjulia.com/"
                 aria-label="Visit my website (opens in a new window)"
                 target="_blank" class="buttons">Website</a>
@@ -221,7 +220,7 @@
               <!-- Font Awesome X -->
               <i
                 class="fa-solid fa-xmark"
-                onclick="authorModal()"
+                id="closeAuthor"
               ></i>
             </div>
             <h2 class="contact-h3">Julia Nascimento</h2>
@@ -289,7 +288,7 @@
               <!-- Font Awesome X -->
               <i
                 class="fa-solid fa-xmark"
-                onclick="quizzModal()"
+                id="closeQuizz"
               ></i>
             </div>
             <form id="quizz-form" method="get">
@@ -327,7 +326,7 @@
               >
               <label><input name="q5" type="radio" class="no" />No</label>
               <div>
-                <button type="submit" class="buttons b-quizz" onclick="quizzModal()">
+                <button type="submit" class="buttons b-quizz" id="closeQuizz">
                   Get my answer
                 </button>
               </div>
@@ -346,7 +345,7 @@
               <!-- Font Awesome X -->
               <i
                 class="fa-solid fa-xmark"
-                onclick="contactModal()"
+                id="closeContact"
               ></i>
             </div>
             <h3 class="contact-h3">Hello!</h3>
@@ -387,7 +386,7 @@
                 <p id="nameError" style="display: none;">Please enter your name.</p>
                 <p id="emailError" style="display: none;">Please enter your email.</p>
                 <p id="messageError" style="display: none;">Please enter a message.</p>
-                 <button class="buttons" type="submit" onclick="">
+                 <button class="buttons" type="submit" id="closeContact">
                   Submit
                 </button>
               </div>
@@ -428,6 +427,16 @@
         </div>
       </div>
     </section>
+    <!--success modal for submitting message 
+    <section class="modal-wrapper">
+      <div class="modal-container modal-width success">
+        <p>Your message has been sent. I will be in touch with you as soon as possible.</p>
+         <i
+                class="fa-solid fa-xmark"
+                onclick=""
+              ></i>
+      </div>
+    </section>-->
 
     <!-- This div is so there is enough space behind the footer-->
     <div class="space2 main-section"></div>

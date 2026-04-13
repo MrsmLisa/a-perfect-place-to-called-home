@@ -13,7 +13,6 @@ function navbarBurger() {
     }
 }
 
-
 /* Read me buttons move down to carousel */
 
 function readMe() {
@@ -73,29 +72,45 @@ function prev() {
 
 /* Author modal */
 
-function authorModal() {
-    let authorM = document.getElementById("author")
-    let authorNone = window.getComputedStyle(authorM).display
-    
-    if (authorNone === "none") {
-        authorM.style.display = "block"
-    } else {
-        authorM.style.display = "none"
-    }
-}
+const authorOpen = document.getElementById("openAuthor");
+const authorOpenButton = document.getElementById("openAuthorButton");
+const authorClose = document.getElementById("closeAuthor");
+const authorPop = document.getElementById("author");
+
+authorOpen.addEventListener("click", () => {
+    authorPop.style.display = "block";
+    document.body.classList.add("noscroll");
+});
+authorOpenButton.addEventListener("click", () => {
+    authorPop.style.display = "block";
+    document.body.classList.add("noscroll");
+});
+authorClose.addEventListener("click", () => {
+    authorPop.style.display = "none";
+    document.body.classList.remove("noscroll");
+});
+
 
 /* Quizz modal */
 
-function quizzModal() {
-    let quizzM = document.getElementById("quizz")
-    let quizzNone = window.getComputedStyle(quizzM).display
+const quizzOpen = document.getElementById("openQuizz");
+const quizzOpenButton = document.getElementById("openQuizzButton");
+const quizzClose = document.getElementById("closeQuizz");
+const quizzPop = document.getElementById("quizz");
 
-    if (quizzNone === "none") {
-        quizzM.style.display = "block"
-    } else {
-        quizzM.style.display = "none"
-    }
-}
+quizzOpen.addEventListener("click", () => {
+    quizzPop.style.display = "block";
+    document.body.classList.add("noscroll");
+});
+quizzOpenButton.addEventListener("click", () => {
+    quizzPop.style.display = "block";
+    document.body.classList.add("noscroll");
+});
+quizzClose.addEventListener("click", () => {
+    quizzPop.style.display = "none";
+    document.body.classList.remove("noscroll");
+});
+
 
 /* Quizz */
 /* Claude AI told me to put in the eventlistner as I had problem with the required input and the submitbutton */
@@ -120,16 +135,23 @@ return
 document.getElementById("quizz-form").addEventListener("submit", quizzAnswer)
 
 /* Contact modal */
-function contactModal() {
-    let contactM = document.getElementById("contact")
-    let contactNone = window.getComputedStyle(contactM).display
+const contactOpen = document.getElementById("openContact");
+const contactOpenButton = document.getElementById("openContactButton");
+const contactClose = document.getElementById("closeContact");
+const contactPop = document.getElementById("contact");
 
-    if (contactNone === "none") {
-        contactM.style.display = "block"
-    } else {
-        contactM.style.display = "none"
-    }
-}
+contactOpen.addEventListener("click", () => {
+    contactPop.style.display = "block";
+    document.body.classList.add("noscroll");
+});
+contactOpenButton.addEventListener("click", () => {
+    contactPop.style.display = "block";
+    document.body.classList.add("noscroll");
+});
+contactClose.addEventListener("click", () => {
+    contactPop.style.display = "none";
+    document.body.classList.remove("noscroll");
+});
 
 const form = document.getElementById("contactForm");
 const nameInput = document.getElementById("name");
