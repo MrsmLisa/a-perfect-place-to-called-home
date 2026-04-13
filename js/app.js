@@ -140,6 +140,7 @@ const contactOpenButton = document.getElementById("openContactButton");
 const contactClose = document.getElementById("closeContact");
 const contactPop = document.getElementById("contact");
 
+
 contactOpen.addEventListener("click", () => {
     contactPop.style.display = "block";
     document.body.classList.add("noscroll");

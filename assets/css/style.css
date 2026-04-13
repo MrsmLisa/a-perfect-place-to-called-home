@@ -15,23 +15,21 @@ body {
     width: 100%;
 }
 
-
 .navbar-box {
     z-index: 99;
     background-color: rgba(88, 112, 94, 0.7);
     position: fixed;
-    width: 30%;
-    left: 0;
+    width: 100px;
+    left: 15px;
     top: 60px;
     display: flex;
-    flex-direction: column;
     padding: 10px;
 }
 
 .burger {
     color: white;
     font-size: 1.5em;
-    position: absolute;
+    position: fixed;
     top: 15px;
     left: 15px;
     z-index: 95;
@@ -48,6 +46,12 @@ body {
     border-color: transparent;
     font-size: 15px;
     padding-bottom: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
 }
 
 header {
@@ -218,19 +222,23 @@ footer {
     padding: 0;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 .modal-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #586F5D;
+    background-color: #586f5d;
     width: 90%;
     height: auto;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
 }
 
 .modal-width {
@@ -238,8 +246,8 @@ footer {
     text-align: center;
 }
 
-.noscroll {
-    overflow: hidden;
+.modal-container {
+    backdrop-filter: blur(5px)!important;
 }
 
 #author {
@@ -321,29 +329,26 @@ label {
 @media (min-width: 320px) {
    
     .image-header {
-        width: 36em;
-        max-width: 100%;
+        width: 160vw;
         height: auto;
     }
      .image-footer {
-        max-height: 7em;
+        width: 160vw;
         height: auto;
     }
-
-    
 }
 
 @media (min-width: 768px) {
-    .image-header {
-        width: 48em;
-        max-width: 100%;
+      .image-header {
+        width: 130vw;
+        height: auto;
+    }
+     .image-footer {
+        width: 130vw;
         height: auto;
     }
     .first-text{
         width: 50%;
-    }
-     .image-footer {
-        max-height: 9em;
     }
     .carousel-image img {
     width: 45%; 
@@ -368,12 +373,12 @@ label {
 
 @media (min-width: 1024px) {
     .image-header{
-        width: 64em;
-        max-width: 100%;
+        width: 80vw;
         height: auto;
     }
      .image-footer {
-        max-height: 12em;
+        width: 80vw;
+        height: auto;
     }
     .caroulse-container {
         width: 60%;
@@ -391,13 +396,6 @@ label {
 }
 
 @media (min-width: 1440px) {
-     .image-header{
-        max-height: 25em;
-        width: 64em;
-    }
-     .image-footer {
-        max-height: 11.8em;
-    }
     .navbar-box {
         margin-left: 0;
         left: 10px;
