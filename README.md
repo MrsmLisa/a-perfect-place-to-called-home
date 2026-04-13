@@ -1,3 +1,7 @@
+
+<img width="769" height="471" alt="different-screens" src="https://github.com/user-attachments/assets/4170d741-6f67-427f-8e2e-111fd9fec4b8" />
+
+
 # A perfect place to call home
 Julia Nascimento is a Brazilian illustrator and cartoonist with art, fashion, and research backgrounds. Employing a multidisciplinary and multicultural approach to her work, she is passionate about autobiographical narratives and collaborations. 
 **A Perfect Place to Call Home** is Julia Nascimento’s first collection of visual narratives about her experiences and reflections of life in different places as a foreigner. 
@@ -36,6 +40,10 @@ All the images used are from Julias book but has been slightly modified by me wi
 
 ### 2.4 Wireframes
 I have used [Whimsical](https://whimsical.com/) to build the wireframes for the site.
+
+<img width="600" height="483" alt="wireframe1" src="https://github.com/user-attachments/assets/410da879-8c60-4d07-9fad-88e524f9838e" />
+
+<img width="446" height="275" alt="wireframe2" src="https://github.com/user-attachments/assets/68e81db8-842d-4ba7-bc47-454c797840f3" />
 
 
 ### 2.5 Project planning
@@ -240,3 +248,5 @@ I have used the following sources for my documentation and testing:
 
 
 ### 7.5 Acknowledgements 
+Julia Nascimento - for the use of her beautiful book.
+Tindy Chan - for all the support and suggestions during the build.
