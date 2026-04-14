@@ -252,14 +252,23 @@ footer {
 
 #author {
     display: none;
+    z-index: 96;
 }
 
 #quizz {
     display: none;
+    z-index: 97;
 }
 
 #contact {
     display: none;
+    z-index: 98;
+}
+
+.success {
+    display: none;
+    z-index: 99;
+    padding: 30px;
 }
 
 .modal-container img {
@@ -308,21 +317,6 @@ label {
     margin: 10px;
     color: white;
     font-family: "roboto";
-}
-
-.success {
-    z-index: 98;
-    padding: 30px;
-}
-
-.contact-box {
-    z-index: 98;
-}
-.author {
-    z-index: 97;
-}
-.quizz {
-    z-index: 97;
 }
 
 
