@@ -139,8 +139,6 @@ const contactOpen = document.getElementById("openContact");
 const contactOpenButton = document.getElementById("openContactButton");
 const contactClose = document.getElementById("closeContact");
 const contactPop = document.getElementById("contact");
-const contactSuccess = document.getElementById("openSuccess");
-const successClose = document.getElementById("success");
 
 contactOpen.addEventListener("click", () => {
     contactPop.style.display = "block";
@@ -150,18 +148,11 @@ contactOpenButton.addEventListener("click", () => {
     contactPop.style.display = "block";
     document.body.classList.add("noscroll");
 });
-contactSuccess.addEventListener("click", () => {
-    contactPop.style.display = "block";
-    document.body.classList.add("noscroll");
-});
 contactClose.addEventListener("click", () => {
     contactPop.style.display = "none";
     document.body.classList.remove("noscroll");
 });
-successClose.addEventListener("click", () => {
-    contactPop.style.display = "none";
-    document.body.classList.remove("noscroll");
-});
+
 
 
 const form = document.getElementById("contactForm");
@@ -174,10 +165,6 @@ const messageErr = document.getElementById("messageError");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
-
-    nameErr.style.display = "none"
-    emailErr.style.display = "none"
-    messageErr.style.display = "none"
 
     nameErr.style.display = "none";
     const name1 = nameInput.value;
@@ -205,9 +192,6 @@ form.addEventListener("submit", function(event) {
         messageErr.style.display = "block"
         return
     }
-
-    contactPop.style.display = "none";
-    contactSuccess.style.display = "none";
         
 });
 

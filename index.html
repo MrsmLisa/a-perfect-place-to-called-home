@@ -329,7 +329,7 @@
           <div class="modal-width">
             <div class="x-mark">
               <!-- Font Awesome X -->
-              <i class="fa-solid fa-xmark" id="contactClose"></i>
+              <i class="fa-solid fa-xmark" id="closeContact"></i>
             </div>
             <h3 class="contact-h3">Hello!</h3>
             <form id="contactForm" method="get">
@@ -374,7 +374,7 @@
                 <p id="messageError" style="display: none">
                   Please enter a message.
                 </p>
-                <button class="buttons" type="submit" id="closeContact">
+                <button class="buttons" id="openSuccess">
                   Submit
                 </button>
               </div>
@@ -415,14 +415,16 @@
         </div>
       </div>
     </section>
-    success modal for submitting message 
+    <!--success modal for submitting message -->
     <section class="modal-wrapper">
-      <div class="modal-container modal-width success" id="openSuccess">
+      <div id="success">
+      <div class="modal-container modal-width success">
         <p>Your message has been sent. I will be in touch with you as soon as possible.</p>
          <i
                 class="fa-solid fa-xmark"
-                id="success"
+                id="closeSuccess"
               ></i>
+      </div>
       </div>
     </section>
 
