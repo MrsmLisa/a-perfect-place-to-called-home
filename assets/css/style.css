@@ -246,10 +246,6 @@ footer {
     text-align: center;
 }
 
-.modal-container {
-    backdrop-filter: blur(5px)!important;
-}
-
 #author {
     display: none;
     z-index: 96;
@@ -258,6 +254,21 @@ footer {
 #quizz {
     display: none;
     z-index: 97;
+}
+
+#yesPopup {
+    display: none;
+    z-index: 99;
+}
+
+#openYes, #openNo {
+    padding: 30px;
+}
+
+#noPopup {
+    display: none;
+    z-index: 99;
+    padding: 30px;
 }
 
 #contact {

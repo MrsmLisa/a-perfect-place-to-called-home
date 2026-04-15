@@ -113,7 +113,13 @@ quizzClose.addEventListener("click", () => {
 
 
 /* Quizz */
+
 /* Claude AI told me to put in the eventlistner as I had problem with the required input and the submitbutton */
+const yesPop = document.getElementById("yesPopup")
+const noPop = document.getElementById("noPopup")
+const yesClose = document.getElementById("closeYes")
+const noClose = document.getElementById("closeNo")
+
 function quizzAnswer(event){
     event.preventDefault()
 let yesAnswer = document.getElementsByClassName("yes")
@@ -123,16 +129,29 @@ for (i=0; i < yesAnswer.length; i++) {
    if (yesAnswer[i].checked === true) {
         answer++
    } 
-}   
-console.log(answer)
+} 
+
 if (answer >=3) {
-    alert("You should move to another contry, go for it!")
+    quizzPop.style.display = "none"
+    yesPop.style.display = "block"
 } else {
-    alert("You should stay in your own contry, moving is annoying anyway.")
+    quizzPop.style.display = "none"
+    noPop.style.display = "block"
 }
-return
+form.reset()
 }
+
+yesClose.addEventListener("click", () => {
+    yesPop.style.display = "none";
+});
+
+noClose.addEventListener("click", () => {
+    noPop.style.display = "none";
+});
+
 document.getElementById("quizz-form").addEventListener("submit", quizzAnswer)
+
+
 
 /* Contact modal */
 const contactOpen = document.getElementById("openContact");
@@ -201,6 +220,8 @@ form.addEventListener("submit", function(event) {
     
     contactPop.style.display = "none";
     successPop.style.display = "block";
+
+    form.reset()
 });
 
 
