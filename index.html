@@ -37,14 +37,22 @@
         </header>
 
         <div class="navbar-box" id="burger">
-          <li><button id="openAuthor" onclick="navbarBurger()"><strong>AUTHOR</strong></button></li>
+          <li>
+            <button id="openAuthor" onclick="navbarBurger()">
+              <strong>AUTHOR</strong>
+            </button>
+          </li>
 
-          <li><button onclick="navbarBurger()" id="openQuizz">
-            <strong>QUIZZ</strong>
-          </button></li>
-          <li><button onclick="navbarBurger()" id="openContact">
-            <strong>CONTACT</strong>
-          </button></li>
+          <li>
+            <button onclick="navbarBurger()" id="openQuizz">
+              <strong>QUIZZ</strong>
+            </button>
+          </li>
+          <li>
+            <button onclick="navbarBurger()" id="openContact">
+              <strong>CONTACT</strong>
+            </button>
+          </li>
         </div>
       </div>
 
@@ -203,7 +211,8 @@
       <footer>
         <img src="./assets/images/footer1.webp" class="image-footer" alt="" />
       </footer>
-      <!-- About the author modul -->
+      <div class="overlay" id="overlay"></div>
+    <!-- About the author modul -->
     <section class="modal-wrapper">
       <div class="author" id="author">
         <div class="modal-container">
@@ -322,29 +331,23 @@
       </div>
     </section>
     <!-- Yes answer pop-up -->
-     <section>
+    <section>
       <div id="yesPopup">
-      <div class="modal-container modal-width" id="openYes">
-        <p>You should move to another contry, go for it!</p>
-         <i
-                class="fa-solid fa-xmark"
-                id="closeYes"
-              ></i>
-      </div>
+        <div class="modal-container modal-width" id="openYes">
+          <p>You should move to another contry, go for it!</p>
+          <i class="fa-solid fa-xmark" id="closeYes"></i>
+        </div>
       </div>
     </section>
-    <!-- No answer pop-up --> 
-     <section>
+    <!-- No answer pop-up -->
+    <section>
       <div id="noPopup">
-      <div class="modal-container modal-width" id="openNo">
-        <p>You should stay in your own contry, moving is annoying anyway.</p>
-         <i
-                class="fa-solid fa-xmark"
-                id="closeNo"
-              ></i>
+        <div class="modal-container modal-width" id="openNo">
+          <p>You should stay in your own contry, moving is annoying anyway.</p>
+          <i class="fa-solid fa-xmark" id="closeNo"></i>
+        </div>
       </div>
-      </div>
-    </section> 
+    </section>
 
     <!--contact modal -->
     <section class="modal-wrapper">
@@ -398,9 +401,7 @@
                 <p id="messageError" style="display: none">
                   Please enter a message.
                 </p>
-                <button class="buttons">
-                  Submit
-                </button>
+                <button class="buttons">Submit</button>
               </div>
             </form>
             <div>
@@ -441,19 +442,19 @@
     <!--success modal for submitting message -->
     <section class="modal-wrapper">
       <div id="success">
-      <div class="modal-container modal-width success" id="openSuccess">
-        <p>Your message has been sent. <br>I will be in touch with you as soon as possible.</p>
-         <i
-                class="fa-solid fa-xmark"
-                id="closeSuccess"
-              ></i>
-      </div>
+        <div class="modal-container modal-width success" id="openSuccess">
+          <p>
+            Your message has been sent. <br />I will be in touch with you as
+            soon as possible.
+          </p>
+          <i class="fa-solid fa-xmark" id="closeSuccess"></i>
+        </div>
       </div>
     </section>
 
     <!-- This div is so there is enough space behind the footer-->
     <div class="space2 main-section"></div>
-
+    
     <!-- js script-->
     <script src="./js/app.js"></script>
   </body>

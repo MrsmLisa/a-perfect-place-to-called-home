@@ -246,14 +246,10 @@ footer {
     text-align: center;
 }
 
-#author {
+#author, #quizz, #contact {
     display: none;
     z-index: 96;
-}
-
-#quizz {
-    display: none;
-    z-index: 97;
+    position: relative;
 }
 
 #yesPopup {
@@ -269,11 +265,6 @@ footer {
     display: none;
     z-index: 99;
     padding: 30px;
-}
-
-#contact {
-    display: none;
-    z-index: 98;
 }
 
 .success {
@@ -298,6 +289,10 @@ footer {
     color: white;
     font-size: 1.5em;
     margin: 20px 10px;
+}
+
+a {
+    color: #586f5d;
 }
 
 .fa-xmark {
@@ -328,6 +323,17 @@ label {
     margin: 10px;
     color: white;
     font-family: "roboto";
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 93;
+    display: none;
 }
 
 

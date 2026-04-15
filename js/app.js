@@ -69,6 +69,16 @@ function prev() {
     dottSlide[currentDot].style.color = "black"
 }
 
+function overlayOpen() {
+    document.getElementById("overlay").style.display = "block";
+    document.body.classList.add("noscroll");
+};
+
+function overlayClose() {
+    document.getElementById("overlay").style.display = "none";
+    document.body.classList.remove("noscroll");
+};
+
 
 /* Author modal */
 
@@ -79,15 +89,15 @@ const authorPop = document.getElementById("author");
 
 authorOpen.addEventListener("click", () => {
     authorPop.style.display = "block";
-    document.body.classList.add("noscroll");
+    overlayOpen()
 });
 authorOpenButton.addEventListener("click", () => {
     authorPop.style.display = "block";
-    document.body.classList.add("noscroll");
+    overlayOpen()
 });
 authorClose.addEventListener("click", () => {
     authorPop.style.display = "none";
-    document.body.classList.remove("noscroll");
+    overlayClose()
 });
 
 
@@ -100,15 +110,15 @@ const quizzPop = document.getElementById("quizz");
 
 quizzOpen.addEventListener("click", () => {
     quizzPop.style.display = "block";
-    document.body.classList.add("noscroll");
+    overlayOpen()
 });
 quizzOpenButton.addEventListener("click", () => {
     quizzPop.style.display = "block";
-    document.body.classList.add("noscroll");
+    overlayOpen()
 });
 quizzClose.addEventListener("click", () => {
     quizzPop.style.display = "none";
-    document.body.classList.remove("noscroll");
+    overlayClose()
 });
 
 
@@ -134,19 +144,23 @@ for (i=0; i < yesAnswer.length; i++) {
 if (answer >=3) {
     quizzPop.style.display = "none"
     yesPop.style.display = "block"
+    overlayOpen()
 } else {
     quizzPop.style.display = "none"
     noPop.style.display = "block"
+    overlayOpen()
 }
 form.reset()
 }
 
 yesClose.addEventListener("click", () => {
     yesPop.style.display = "none";
+    overlayClose()
 });
 
 noClose.addEventListener("click", () => {
     noPop.style.display = "none";
+    overlayClose()
 });
 
 document.getElementById("quizz-form").addEventListener("submit", quizzAnswer)
@@ -163,19 +177,19 @@ const successClose = document.getElementById("closeSuccess");
 
 contactOpen.addEventListener("click", () => {
     contactPop.style.display = "block";
-    document.body.classList.add("noscroll");
+    overlayOpen()
 });
 contactOpenButton.addEventListener("click", () => {
     contactPop.style.display = "block";
-    document.body.classList.add("noscroll");
+    overlayOpen()
 });
 contactClose.addEventListener("click", () => {
     contactPop.style.display = "none";
-    document.body.classList.remove("noscroll");
+    overlayClose()
 });
 successClose.addEventListener("click", () => {
     successPop.style.display = "none";
-    document.body.classList.remove("noscroll");
+    overlayClose()
 });
 
 
@@ -220,6 +234,7 @@ form.addEventListener("submit", function(event) {
     
     contactPop.style.display = "none";
     successPop.style.display = "block";
+    overlayOpen()
 
     form.reset()
 });
