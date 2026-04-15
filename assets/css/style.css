@@ -252,18 +252,13 @@ footer {
     position: relative;
 }
 
-#yesPopup {
+#yesPopup, #noPopup {
     display: none;
     z-index: 99;
+    position: relative;
 }
 
 #openYes, #openNo {
-    padding: 30px;
-}
-
-#noPopup {
-    display: none;
-    z-index: 99;
     padding: 30px;
 }
 

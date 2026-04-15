@@ -1,83 +1,83 @@
 
 /* navbar burger */
 function navbarBurger() {
-    let navbarButton = document.getElementById("burger")
+    let navbarButton = document.getElementById("burger");
     /* Claude Ai done the window.get line to fix the problem with 
     having to press the buttons twice to make them work */
-    let navbarNone = window.getComputedStyle(navbarButton).display
+    let navbarNone = window.getComputedStyle(navbarButton).display;
     
     if (navbarNone === "none") {
-        navbarButton.style.display = "block"
+        navbarButton.style.display = "block";
     } else {
-        navbarButton.style.display = "none"
+        navbarButton.style.display = "none";
     }
 }
 
 /* Read me buttons move down to carousel */
 
 function readMe() {
-    let scrollDown = document.getElementById("carousel")
-    scrollDown.scrollIntoView(true)
+    let scrollDown = document.getElementById("carousel");
+    scrollDown.scrollIntoView(true);
 }
 
 /* carousel*/
-let imageSlide = document.getElementsByClassName("carousel-image")
+let imageSlide = document.getElementsByClassName("carousel-image");
 
 for (i=0; i < imageSlide.length; i++) {
-    imageSlide[i].style.display = "none"
+    imageSlide[i].style.display = "none";
 }
-imageSlide[0].style.display= "block"
+imageSlide[0].style.display= "block";
 
-let currentImage = 0
+let currentImage = 0;
 
 /* Dotts slide */
-let dottSlide = document.getElementsByClassName("dotts")
+let dottSlide = document.getElementsByClassName("dotts");
 
 for (i=0; i < dottSlide.length; i++) {
-    dottSlide[i].style.color = "grey"
+    dottSlide[i].style.color = "grey";
 }
-dottSlide[0].style.color = "black"
+dottSlide[0].style.color = "black";
 
-let currentDot = 0
+let currentDot = 0;
 
 /* Claude Ai done the bugging and added the % for these functions so it would wrap*/
 function next() {
-    imageSlide[currentImage].style.display = "none"
+    imageSlide[currentImage].style.display = "none";
     currentImage = (currentImage + 1) % imageSlide.length;
-    imageSlide[currentImage].style.display = "block"
+    imageSlide[currentImage].style.display = "block";
 
-    dottSlide[currentDot].style.color = "grey"
+    dottSlide[currentDot].style.color = "grey";
     currentDot = (currentDot + 1) % dottSlide.length;
-    dottSlide[currentDot].style.color = "black"
+    dottSlide[currentDot].style.color = "black";
 }
 
 function prev() {
     if(currentImage === 0){
-        currentImage = imageSlide.length - 1
-        return
+        currentImage = imageSlide.length - 1;
+        return;
     }
-    imageSlide[currentImage].style.display = "none"
+    imageSlide[currentImage].style.display = "none";
     currentImage = (currentImage - 1) % imageSlide.length;
-    imageSlide[currentImage].style.display = "block"
+    imageSlide[currentImage].style.display = "block";
 
     if(currentDot === 0){
-        currentDot = dottSlide.length - 1
-        return
+        currentDot = dottSlide.length - 1;
+        return;
     }
-    dottSlide[currentDot].style.color = "grey"
+    dottSlide[currentDot].style.color = "grey";
     currentDot = (currentDot - 1) % dottSlide.length;
-    dottSlide[currentDot].style.color = "black"
+    dottSlide[currentDot].style.color = "black";
 }
 
 function overlayOpen() {
     document.getElementById("overlay").style.display = "block";
     document.body.classList.add("noscroll");
-};
+}
 
 function overlayClose() {
     document.getElementById("overlay").style.display = "none";
     document.body.classList.remove("noscroll");
-};
+}
 
 
 /* Author modal */
@@ -89,15 +89,15 @@ const authorPop = document.getElementById("author");
 
 authorOpen.addEventListener("click", () => {
     authorPop.style.display = "block";
-    overlayOpen()
+    overlayOpen();
 });
 authorOpenButton.addEventListener("click", () => {
     authorPop.style.display = "block";
-    overlayOpen()
+    overlayOpen();
 });
 authorClose.addEventListener("click", () => {
     authorPop.style.display = "none";
-    overlayClose()
+    overlayClose();
 });
 
 
@@ -110,60 +110,60 @@ const quizzPop = document.getElementById("quizz");
 
 quizzOpen.addEventListener("click", () => {
     quizzPop.style.display = "block";
-    overlayOpen()
+    overlayOpen();
 });
 quizzOpenButton.addEventListener("click", () => {
     quizzPop.style.display = "block";
-    overlayOpen()
+    overlayOpen();
 });
 quizzClose.addEventListener("click", () => {
     quizzPop.style.display = "none";
-    overlayClose()
+    overlayClose();
 });
 
 
 /* Quizz */
 
 /* Claude AI told me to put in the eventlistner as I had problem with the required input and the submitbutton */
-const yesPop = document.getElementById("yesPopup")
-const noPop = document.getElementById("noPopup")
-const yesClose = document.getElementById("closeYes")
-const noClose = document.getElementById("closeNo")
+const yesPop = document.getElementById("yesPopup");
+const noPop = document.getElementById("noPopup");
+const yesClose = document.getElementById("closeYes");
+const noClose = document.getElementById("closeNo");
 
 function quizzAnswer(event){
-    event.preventDefault()
-let yesAnswer = document.getElementsByClassName("yes")
-let answer = 0
+    event.preventDefault();
+let yesAnswer = document.getElementsByClassName("yes");
+let answer = 0;
 
 for (i=0; i < yesAnswer.length; i++) {
    if (yesAnswer[i].checked === true) {
-        answer++
+        answer++;
    } 
 } 
 
 if (answer >=3) {
-    quizzPop.style.display = "none"
-    yesPop.style.display = "block"
-    overlayOpen()
+    quizzPop.style.display = "none";
+    yesPop.style.display = "block";
+    overlayOpen();
 } else {
-    quizzPop.style.display = "none"
-    noPop.style.display = "block"
-    overlayOpen()
+    quizzPop.style.display = "none";
+    noPop.style.display = "block";
+    overlayOpen();
 }
-form.reset()
+form.reset();
 }
 
 yesClose.addEventListener("click", () => {
     yesPop.style.display = "none";
-    overlayClose()
+    overlayClose();
 });
 
 noClose.addEventListener("click", () => {
     noPop.style.display = "none";
-    overlayClose()
+    overlayClose();
 });
 
-document.getElementById("quizz-form").addEventListener("submit", quizzAnswer)
+document.getElementById("quizz-form").addEventListener("submit", quizzAnswer);
 
 
 
@@ -177,19 +177,19 @@ const successClose = document.getElementById("closeSuccess");
 
 contactOpen.addEventListener("click", () => {
     contactPop.style.display = "block";
-    overlayOpen()
+    overlayOpen();
 });
 contactOpenButton.addEventListener("click", () => {
     contactPop.style.display = "block";
-    overlayOpen()
+    overlayOpen();
 });
 contactClose.addEventListener("click", () => {
     contactPop.style.display = "none";
-    overlayClose()
+    overlayClose();
 });
 successClose.addEventListener("click", () => {
     successPop.style.display = "none";
-    overlayClose()
+    overlayClose();
 });
 
 
@@ -210,18 +210,18 @@ form.addEventListener("submit", function(event) {
 
     let valid1 = name1==="";
     if (valid1 === true) {
-        nameErr.style.display = "block"
-        return
-    };
+        nameErr.style.display = "block";
+        return;
+    }
 
-    emailErr.style.display ="none"
+    emailErr.style.display ="none";
     const email = emailInput.value;
 
     let valid2 = email==="";
     if (valid2 === true) {
-        emailErr.style.display = "block"
-        return
-    };
+        emailErr.style.display = "block";
+        return;
+    }
 
     messageErr.style.display = "none";
     const message = messageInput.value;
@@ -229,14 +229,14 @@ form.addEventListener("submit", function(event) {
     let valid3 = message==="";
     if (valid3 === true) {
         messageErr.style.display = "block"
-        return
-    };       
+        return;
+    }       
     
     contactPop.style.display = "none";
     successPop.style.display = "block";
-    overlayOpen()
+    overlayOpen();
 
-    form.reset()
+    form.reset();
 });
 
 

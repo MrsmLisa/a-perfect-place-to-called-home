@@ -35,8 +35,7 @@
           <!-- Font Awsome burger-->
           <i class="fa-solid fa-bars burger" onclick="navbarBurger()"></i>
         </header>
-
-        <div class="navbar-box" id="burger">
+        <ol class="navbar-box" id="burger">
           <li>
             <button id="openAuthor" onclick="navbarBurger()">
               <strong>AUTHOR</strong>
@@ -53,7 +52,7 @@
               <strong>CONTACT</strong>
             </button>
           </li>
-        </div>
+          </ol>
       </div>
 
       <!-- Main -->
@@ -321,7 +320,7 @@
               >
               <label><input name="q5" type="radio" class="no" />No</label>
               <div>
-                <button type="submit" class="buttons b-quizz" id="closeQuizz">
+                <button type="submit" class="buttons b-quizz">
                   Get my answer
                 </button>
               </div>
@@ -334,7 +333,7 @@
     <section>
       <div id="yesPopup">
         <div class="modal-container modal-width" id="openYes">
-          <p>You should move to another contry, go for it!</p>
+          <h2>You should move to another contry, go for it!</h2>
           <i class="fa-solid fa-xmark" id="closeYes"></i>
         </div>
       </div>
@@ -343,7 +342,7 @@
     <section>
       <div id="noPopup">
         <div class="modal-container modal-width" id="openNo">
-          <p>You should stay in your own contry, moving is annoying anyway.</p>
+          <h2>You should stay in your own contry, moving is annoying anyway.</h2>
           <i class="fa-solid fa-xmark" id="closeNo"></i>
         </div>
       </div>
@@ -371,7 +370,6 @@
                 type="text"
                 placeholder="Your name"
                 autocomplete="given-name"
-                style="color: black"
               />
 
               <input
@@ -381,7 +379,6 @@
                 type="email"
                 placeholder="Email"
                 autocomplete="email"
-                style="color: black"
               />
               <textarea
                 class="contact"
@@ -389,7 +386,6 @@
                 name="message"
                 rows="5"
                 placeholder="Message"
-                style="color: black"
               ></textarea>
               <div>
                 <p id="nameError" style="display: none">
@@ -443,10 +439,10 @@
     <section class="modal-wrapper">
       <div id="success">
         <div class="modal-container modal-width success" id="openSuccess">
-          <p>
+          <h2>
             Your message has been sent. <br />I will be in touch with you as
             soon as possible.
-          </p>
+          </h2>
           <i class="fa-solid fa-xmark" id="closeSuccess"></i>
         </div>
       </div>
