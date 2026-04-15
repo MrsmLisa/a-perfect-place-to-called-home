@@ -139,6 +139,8 @@ const contactOpen = document.getElementById("openContact");
 const contactOpenButton = document.getElementById("openContactButton");
 const contactClose = document.getElementById("closeContact");
 const contactPop = document.getElementById("contact");
+const successPop = document.getElementById("openSuccess");
+const successClose = document.getElementById("closeSuccess");
 
 contactOpen.addEventListener("click", () => {
     contactPop.style.display = "block";
@@ -150,6 +152,10 @@ contactOpenButton.addEventListener("click", () => {
 });
 contactClose.addEventListener("click", () => {
     contactPop.style.display = "none";
+    document.body.classList.remove("noscroll");
+});
+successClose.addEventListener("click", () => {
+    successPop.style.display = "none";
     document.body.classList.remove("noscroll");
 });
 
@@ -191,7 +197,11 @@ form.addEventListener("submit", function(event) {
     if (valid3 === true) {
         messageErr.style.display = "block"
         return
-    }
-        
+    };       
+    
+    contactPop.style.display = "none";
+    successPop.style.display = "block";
 });
+
+
 
