@@ -1,4 +1,5 @@
-<img width="250" height="166" alt="different-screens" src="https://github.com/user-attachments/assets/7d727885-18f6-42a0-bf5c-36192889cf09" />
+
+<img width="702" height="328" alt="unserstory2 1" src="https://github.com/user-attachments/assets/ba3f67a4-163d-4aad-9064-ed4f4298ced9" />
 
 
 # 1 Overview
@@ -27,12 +28,11 @@ To allow the user to navigate and control the website with ease.
 
 ## Scope
 ### Functional requirements
-make the site easy to navigate and interact with.
 Implement a navigation system that is consistent in style and structure that works over different devices.
 put a lot of emphasis om the imagery without losing the main purpose of the site.
 Make sure that the navigation does not disappear in the imagery.
 
-### Content requirements
+Content requirements
 
 
 ## Structure
@@ -52,7 +52,7 @@ This is the landing page with the title and a short description what the project
 ### Carousel
 There are two images side to side per carousel-page, if viewed on a small device the images moves to a column to be able to make the images as large as possible. To read all the carousel-pages the user navigates with the arrow buttons at the bottom of the carousel. So the user knows where they are in the comic there are small dots just above the arrows that changes opacity as the carousel moves.
 
-## Modals
+### Modals
 All the modals have the same background color as the main site. As the modals open the main site goes dark and it won’t scroll as to not take away the focus of the modal.
 
 ### About the author
@@ -71,6 +71,10 @@ Expert for showing of the comic sample, one of the main objectives is for the us
 ## Skeleton
 I have used [Whimsical](https://whimsical.com/) to build the wireframes for the site.
 
+<img width="600" height="483" alt="wireframe1" src="https://github.com/user-attachments/assets/664612de-fae8-44d7-bd5c-6720bb5c6c22" />
+
+<img width="446" height="275" alt="wireframe2" src="https://github.com/user-attachments/assets/ed3de1ff-9e4e-4ece-b12e-801560c63322" />
+
 
 ## Surface
 ### Color scheme
@@ -85,12 +89,16 @@ White is used for all the text.
 ### Typography 
 The font Roboto has been used for all the text on the site. Originally the font Quicksand was used for the text and Roboto for the headers but the Quicksand was to thin for the white text to show properly.   
 
+<img width="816" height="160" alt="fonts" src="https://github.com/user-attachments/assets/bbca8221-ff3d-4c7d-8fbf-56504807c931" />
 
 
 # 3 features
 ## Existing feature
 ### Responsive layout and design
 For the project design to be fully compatible and interactive on all screen types and sizes CSS flex box has been used to maximize the the functionality. The project works between 320px to 1440px wide screens sizes.
+
+<img width="450" height="299" alt="different-screens" src="https://github.com/user-attachments/assets/c98cb0f5-eba2-45f0-b297-84cbc1bebc65" />
+
 
 ### Accessibility
 The aim while designing the webistes is to make it as accessible and user friendly as possible. To achieve this the following has been done:
@@ -99,10 +107,12 @@ The aim while designing the webistes is to make it as accessible and user friend
  * I have used the [Web Disability Simulator](https://chromewebstore.google.com/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) to make sure the visuals on the page has enough contrast.
  * Aria-labels have been used when possible.
 
-	## Future feature 
+### Future features
+As the novel is made of many different stories there could be more then one carousel on the page to show the authors different styles. 
+ 
 
 # 4 Technologies used
-## Laguage used
+## Laguages used
 HTML
 CSS
 JavaScript
@@ -113,80 +123,18 @@ JavaScript
 * GitHub - used to save files
 * [Whimsical](https://whimsical.com/) - used for the wireframe
 * [Google Fonts](https://fonts.google.com/) - used for all the fonts on the site
-* [Font Awesome](https://fontawesome.com/) - used for the social media logos
-* [Faveicon](https://favicon.io/favicon-generator/) - used to make a faveicon
-Chrome dev tools - to test the website and make sure it is all responsive
-[Font Awesome](https://fontawesome.com/) - has been used for the burger, arrows on the carousel and social media icons.
-[Favicon](https://favicon.io/#google_vignette) - has been used for the favicon
-[Claude AI](https://claude.ai/new) - has helpt with some of the bugs with code, clearly stated in the code.
-[Google Fonts](https://fonts.google.com/) - used for all the fonts
-[Freepik](https://www.freepik.com/) - used for images and drawings  
-[Free Convert](https://www.freeconvert.com/compress-png) - to convert and compress the images.  
-[Merge Images](https://mergeimages.net/) - to convert and compress the images.  
-
-
-## Documentation and testing
-I have used the following sources for my documentation and testing:  
-[Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet) - to help with the read me.  
-[Jehna read me best practices](https://github.com/jehna/readme-best-practices?tab=readme-ov-file) - to help with the read me.  
-[validator](https://validator.w3.org/nu/#textarea) - to check the HTML.  
-[W3C](https://jigsaw.w3.org/css-validator/) - to check the CSS.  
-[autoprefixer](https://autoprefixer.github.io/) - to add vendor prefixes to CSS.  
-
-
-# 5 Testing
-
-## Testing user stories
-
- * I want to be able to find information quickly and without problem.
-
-<img width="626" height="341" alt="userstory1" src="https://github.com/user-attachments/assets/bfa7e832-de45-4705-8ac8-b5c0b06790c2" />
- 
- * I want user-friendly design that works on different devises.
- * I want high quality images and engaging illustrations.
-
-<img width="702" height="328" alt="unserstory2 1" src="https://github.com/user-attachments/assets/93b1d983-a7b7-4ee3-9a54-5d0f721a7b34" />
-
- * I want to be able to read a sample of the comic.
-
-<img width="542" height="300" alt="userstory2" src="https://github.com/user-attachments/assets/eb652704-e8b7-40c4-ad81-2bd3e1aeb66b" />
- 
- * I want an easy way to get in contact with the author.
-
-<img width="656" height="509" alt="contact" src="https://github.com/user-attachments/assets/8533c197-80dc-4694-991d-0fdc75878b9c" />
-
-
-## Fixing bugs
-There was a line at the top of the the website that I could not get rid of. After asking Claud AI I was able to put in the right code in CSS to fix the problem.
-
-<img width="344" height="107" alt="bug line" src="https://github.com/user-attachments/assets/e151b79e-6419-4666-b3e6-45cd473c3d11" />
-
-When I put in the carousel code in JS the forward buttons worked until I reached the end of the images and then the images disapeared complitely.  
-
-<img width="319" height="298" alt="comic bug" src="https://github.com/user-attachments/assets/79cbd63b-2e5a-443b-b21e-2736dd3914ea" />
-
-With the help of Claude AI I put in a % so the carousel keeps going around.
-
-<img width="475" height="125" alt="bugslide" src="https://github.com/user-attachments/assets/f0a87501-b573-4f61-8039-f065156caa41" />
-
-
-## Manual testing
-
-## Lighthouse
-I have used Lighthouse in dev tools to test the performance, accessibility and best practices. The first time I had a 72 on performance, 99 on accessibility and 100 for best practices. The problem was the size of the images that I first resized in Photoshop and then compressed using FreeConvert. The new score is:
-
-For desktop
-
-<img width="448" height="224" alt="lighthouse-desk" src="https://github.com/user-attachments/assets/35484394-1a5d-4678-b499-8e478c0dcc65" />
-
-For mobile
-
-<img width="454" height="201" alt="lighthouse-mobil" src="https://github.com/user-attachments/assets/b85758f8-5ce9-4a6e-973f-7a8209c20c8e" />
-
-
-## Validation
-W3C html and css
-Autoprefixer css
+* [Font Awesome](https://fontawesome.com/) - used for the ”burger”, arrows and dots on the carousel and social media logos
+* [Faveicon](https://favicon.io/favicon-generator/) - used to make a favicon
+* Chrome dev tools - to test the website and make sure it is all responsive
+* [Claude AI](https://claude.ai/new) - has helped with some of the bugs with code, clearly stated in the code. I have used it in Socratic mode and asked it not to give me any code so I would learn as much as possible.
+* [Google Fonts](https://fonts.google.com/) - used for all the fonts
+* [Freepik](https://www.freepik.com/) - used for images and drawings  
+* [Free Convert](https://www.freeconvert.com/compress-png) - to convert and compress the images.  
+* [Merge Images](https://mergeimages.net/) - to convert and compress the images.  
+* [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet) - to help with the read me.   
+* [validator](https://validator.w3.org/nu/#textarea) - to check the HTML.  
+* [W3C](https://jigsaw.w3.org/css-validator/) - to check the CSS.  
+* [autoprefixer](https://autoprefixer.github.io/) - to add vendor prefixes to CSS.  
 
 
 # 6 Deployment
@@ -213,24 +161,29 @@ Autoprefixer css
 All images and texts are taken from Julia Nascimentos book A perfect place to call home or marketing material for the book. 
 The quiz is written by me.
 
-## Media
-Favicon
-
 ## Code
-All the different sites I have used as inspiration.
+To create the JavaScript code for the different segments I spent time looking at other sites and playing around. Below I have listed the pages that I ended up using code from. 
+
+### Modals
+[geeksforgeeks](https://www.geeksforgeeks.org/javascript/how-to-create-a-modal-box-using-html-css-and-javascript/)
+[serhanmertozel](https://serhanmertozel.medium.com/building-a-simple-modal-popup-with-javascript-a-beginners-guide-859243330e5b)
+[w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+
+New code for modals (see under significant bugs in testing).
+[wowoptin](https://wowoptin.com/disable-background-scrolling-when-popup-modal-is-open/)
+
+### Carousel
+[w3schools](https://www.w3schools.com/howto/howto_js_slideshow.asp)
+[geeksforgeeks](https://www.geeksforgeeks.org/html/building-a-carousel-with-vanilla-javascript/)
+
+### Quiz
+[sitepoint](https://www.sitepoint.com/simple-javascript-quiz/)
 
 
 
 # 8 Acknowledgement
 Julia Nascimento - for the use of her beautiful book.
 Tindy Chan - for all the support and suggestions during the build.
-Ben - for the aha moments 
-Geraldine … - for introdusing me to the socratic mode 
+Benjamin Kavanagh - for the mentorship and the aha moments.
+Geraldine - for introdusing me to the Socratic mode in AI.
 And for my husband and son for the support and love.
-
-
-9 disclamer
-
-
-
-
