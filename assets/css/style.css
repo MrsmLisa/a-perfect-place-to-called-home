@@ -320,6 +320,10 @@ label {
     font-family: "roboto";
 }
 
+#name, #email, #message {
+    color: black;
+}
+
 .overlay {
     position: fixed;
     top: 0;
