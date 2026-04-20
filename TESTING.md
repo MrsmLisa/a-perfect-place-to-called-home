@@ -2,58 +2,102 @@
 
 ## User stories testing
 
- * I want to be able to find information quickly and without problem.
+I want to be able to find information quickly and without problem.
+ * The title of the book and the information text is the first thing the user is faced with when opening the site. 
+The three bars in the corner indicates where more information can be found. 
+The button that says *Read a sample* shows what more the user can expect to find on the page.
 
  
- * I want user-friendly design that works on different devises.
- * I want high quality images and engaging illustrations.
+I want user-friendly design that works on different devises.
+The header and the footer images all move according to the size of the screen. 
+The modals all change size depending on the size of the device.
+* The carousel changes size and go from row to column to be able to have the comic images as large as possible on all devises.
 
 
- * I want to be able to read a sample of the comic.
+ I want high quality images and engaging illustrations.
+The images are the most important thing as Julia is a illustrator and this can be used to send to future clients. 
+There are many illustrations on the site that have all Benn resized and. Compressed for the best viewing experience for the user.
+
+
+I want to be able to read a sample of the comic.
+* There is a fully functional carousel with 14 images as a sample for the user to read.
+
  
- * I want an easy way to get in contact with the author.
+I want an easy way to get in contact with the author.
+* There are several ways to contact the author on the site. There is the contact form that the user can get to from the navbar and the buttons under the carousel. There are also links to Julias website and her social media on several locations.
 
-# Feature testing
-modals quiz contact
+## Feature testing
+### Navbar
+Ensure that it is always visible on all devises.
+Ensure that it opens when the icon is clicked and closes automatically when the user had clicked on one of the links.
+
+### Carousel
+Ensure that the images are in a row except for the 320px viewpoint where it goes to a column.
+Ensure the forward and previous button works in a loop both ways.
+Ensure that the dot indicators follow along with the forward and previous buttons.
+
+### Modals 
 Ensure the Modal works no matter where the user is on the website.
 Ensure the Modal is displayed centrally, and the background is appropriately dimmed.
 Ensure the Modal has a header, body text, and a close button.
-Ensure the Modal can be dismissed by interacting with the screen outside the modal area.
-Ensure pressing the escape key closes the Modal.
 Ensure the close button closes the Modal.
 Ensure all links work, and open in a separate browser window.
 Ensure all content in the Modal fits appropriately within the Modal, and is legible.
 
-responsive layout and design
-tested on different types of phones
+### Responsive layout and design
 Ensure all Features function correctly from at least 320px wide.
 
-Ensure Modals are presented appropriately on all viewports:
-Interaction is enabled.
-The Modal fits on device's screen.
-The content is legible.
-The user can dismiss the modal.
-
-# Browser testing
+## Browser testing
 the different browsers tested
-# Code validation
+
+## Code validation
+
 ## Lighthouse
 I have used Lighthouse in dev tools to test the performance, accessibility and best practices. The first time I had a 72 on performance, 99 on accessibility and 100 for best practices. The problem was the size of the images that I first resized in Photoshop and then compressed using FreeConvert. The new score is:
+For desktop:
+
+<img width="452" height="188" alt="desktop" src="https://github.com/user-attachments/assets/2751a97e-a334-43a6-93c0-af3e2cf61708" />
+
+For mobile
+
+<img width="454" height="186" alt="mobil" src="https://github.com/user-attachments/assets/6277d20c-e3ee-4e9c-9aa5-f192fd101f79" />
+
 
 ## Validation
-W3C html and css
-Autoprefixer css
+W3C HTML results:
+
+<img width="513" height="133" alt="html-validator" src="https://github.com/user-attachments/assets/51365418-f6aa-40cd-92a5-752865f08507" />
+
+W3C CSS results:
+
+<img width="669" height="169" alt="css-validering" src="https://github.com/user-attachments/assets/babe2e25-94bc-47be-bc10-638f36931159" />
+
 
 # Significant bugs
 
-# 
-There was a line at the top of the the website that I could not get rid of. After asking Claud AI I was able to put in the right code in CSS to fix the problem.
-
-
 When I put in the carousel code in JS the forward buttons worked until I reached the end of the images and then the images disapeared complitely.  
 
+<img width="319" height="298" alt="comicbug" src="https://github.com/user-attachments/assets/b594448c-fa7c-494a-93ac-3a478bd67b14" />
 
 With the help of Claude AI I put in a % so the carousel keeps going around.
+
+<img width="475" height="125" alt="bugslide" src="https://github.com/user-attachments/assets/b3594b2f-d213-48d8-9627-2781d4b8a0cb" />
+
+
+After I finished the modals I needed to add no scroll and an overlay on the background when the modal is open. When looking for a way to do this I found a code that would solve all this and the pop-up of the modals with a nicer code. 
+
+The old code:
+
+<img width="475" height="206" alt="older-jscode" src="https://github.com/user-attachments/assets/99660843-0044-46cd-8bca-4085358cad2f" />
+
+
+The new code 
+
+<img width="528" height="327" alt="new-code" src="https://github.com/user-attachments/assets/7a78caa1-67e0-4509-9adc-4ee80476c90a" />
+
+
+Website where the code was found.
+[wowoptin.com](https://wowoptin.com/disable-background-scrolling-when-popup-modal-is-open/)
 
 
 
