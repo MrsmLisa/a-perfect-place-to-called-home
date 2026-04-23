@@ -124,7 +124,6 @@ quizzClose.addEventListener("click", () => {
 
 /* Quizz */
 
-/* Claude AI told me to put in the eventlistner as I had problem with the required input and the submitbutton */
 const yesPop = document.getElementById("yesPopup");
 const noPop = document.getElementById("noPopup");
 const yesClose = document.getElementById("closeYes");
@@ -162,6 +161,9 @@ noClose.addEventListener("click", () => {
     noPop.style.display = "none";
     overlayClose();
 });
+
+/* Claude AI told me to put in the eventlistner as I had 
+problem with the required input and the submitbutton */
 
 document.getElementById("quizz-form").addEventListener("submit", quizzAnswer);
 
