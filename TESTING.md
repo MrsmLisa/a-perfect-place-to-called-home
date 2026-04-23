@@ -99,5 +99,15 @@ The new code
 Website where the code was found.
 [wowoptin.com](https://wowoptin.com/disable-background-scrolling-when-popup-modal-is-open/)
 
+I used Claude AI to help me when I had a problem with the input and the submit button in the quiz. 
+
+
+<img width="637" height="115" alt="eventlistner" src="https://github.com/user-attachments/assets/930178ff-ac1b-4c5a-9d08-49138fe31450" />
+
+
+I had the problem that all buttons had to be pressed twice to work. Claude AI told me to put in the window.getComputedStyle to fix the problem.
+
+<img width="522" height="250" alt="navbar-bug" src="https://github.com/user-attachments/assets/8960c74b-5d37-4146-99e9-caef3a9dec8b" />
+
 
 
