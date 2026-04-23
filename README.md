@@ -32,8 +32,6 @@ Implement a navigation system that is consistent in style and structure that wor
 put a lot of emphasis om the imagery without losing the main purpose of the site.
 Make sure that the navigation does not disappear in the imagery.
 
-Content requirements
-
 
 ## Structure
 The website uses a single page with the content being navigated by either buttons or scrolling. 
@@ -82,7 +80,19 @@ As the imagery is the main focus for the site there are very few colors used.
 
 The color green used as background for all of the site and the modals is taken from the cover of the book from the grass section.
 
+<img width="150" height="207" alt="green" src="https://github.com/user-attachments/assets/4aab4fc7-f80a-4121-a1eb-3d4c820bf256" />
+
+
+<img width="350" height="395" alt="green-colortest" src="https://github.com/user-attachments/assets/bbe3f02c-e0bb-4008-9cf8-c530c59dc1a4" />
+
+
 The blue used on the buttons are taken from the trees in the foreground. The blue is dark enough to stand out from the green but as they both exist in the original cover it all feels cohesive. 
+
+<img width="150" height="209" alt="blue" src="https://github.com/user-attachments/assets/a06373da-b6be-403f-a51c-a02f1058c9e0" />
+
+<img width="350" height="392" alt="blue-colortest" src="https://github.com/user-attachments/assets/c5b58c5d-03cb-460f-9856-9d087442e567" />
+
+
 
 White is used for all the text. 
 
@@ -113,9 +123,9 @@ As the novel is made of many different stories there could be more then one caro
 
 # 4 Technologies used
 ## Laguages used
-HTML
-CSS
-JavaScript
+HTML  
+CSS  
+JavaScript  
 
 ## Framework, libraries and programs used
 
@@ -165,15 +175,15 @@ The quiz is written by me.
 To create the JavaScript code for the different segments I spent time looking at other sites and playing around. Below I have listed the pages that I ended up using code from. 
 
 ### Modals
-[geeksforgeeks](https://www.geeksforgeeks.org/javascript/how-to-create-a-modal-box-using-html-css-and-javascript/)
-[serhanmertozel](https://serhanmertozel.medium.com/building-a-simple-modal-popup-with-javascript-a-beginners-guide-859243330e5b)
+[geeksforgeeks](https://www.geeksforgeeks.org/javascript/how-to-create-a-modal-box-using-html-css-and-javascript/)  
+[serhanmertozel](https://serhanmertozel.medium.com/building-a-simple-modal-popup-with-javascript-a-beginners-guide-859243330e5b)  
 [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 
 New code for modals (see under significant bugs in testing).
 [wowoptin](https://wowoptin.com/disable-background-scrolling-when-popup-modal-is-open/)
 
 ### Carousel
-[w3schools](https://www.w3schools.com/howto/howto_js_slideshow.asp)
+[w3schools](https://www.w3schools.com/howto/howto_js_slideshow.asp)  
 [geeksforgeeks](https://www.geeksforgeeks.org/html/building-a-carousel-with-vanilla-javascript/)
 
 ### Quiz
@@ -182,8 +192,8 @@ New code for modals (see under significant bugs in testing).
 
 
 # 8 Acknowledgement
-Julia Nascimento - for the use of her beautiful book.
-Tindy Chan - for all the support and suggestions during the build.
-Benjamin Kavanagh - for the mentorship and the aha moments.
-Geraldine - for introdusing me to the Socratic mode in AI.
-And for my husband and son for the support and love.
+Julia Nascimento - for the use of her beautiful book.  
+Tindy Chan - for all the support and suggestions during the build.  
+Benjamin Kavanagh - for the mentorship and the aha moments.  
+Geraldine - for introdusing me to the Socratic mode in AI.  
+And for my husband and son for the support and love.  
