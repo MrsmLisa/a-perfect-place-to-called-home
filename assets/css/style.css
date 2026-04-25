@@ -63,10 +63,11 @@ header {
     margin: 0;
     padding: 0;
     line-height: 0;
+    overflow: hidden;
 }
 
 .image-header {
-    width: 100%;
+    width: 140%;
     height: auto;
     display: block;
     margin: 0;
@@ -209,9 +210,11 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
 }
 
 .image-footer {
+    width: 140%;
     position: fixed;
     bottom: 0;
 }
@@ -342,25 +345,13 @@ label {
 }
 
 
-@media (min-width: 320px) {
-   
-    .image-header {
-        width: 160vw;
-        height: auto;
-    }
-     .image-footer {
-        width: 160vw;
-        height: auto;
-    }
-}
-
 @media (min-width: 768px) {
-      .image-header {
-        width: 130vw;
+     .image-header {
+        width: 100%;
         height: auto;
     }
      .image-footer {
-        width: 130vw;
+        width: 100%;
         height: auto;
     }
     .first-text{
@@ -389,11 +380,11 @@ label {
 
 @media (min-width: 1024px) {
     .image-header{
-        width: 80vw;
+        width: 80%;
         height: auto;
     }
      .image-footer {
-        width: 80vw;
+        width: 80%;
         height: auto;
     }
     .caroulse-container {
