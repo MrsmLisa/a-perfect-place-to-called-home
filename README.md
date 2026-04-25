@@ -196,4 +196,5 @@ Julia Nascimento - for the use of her beautiful book.
 Tindy Chan - for all the support and suggestions during the build.  
 Benjamin Kavanagh - for the mentorship and the aha moments.  
 Geraldine - for introdusing me to the Socratic mode in AI.  
+Jessica Fransson Duffy - for the exstensive bug testing.
 And for my husband and son for the support and love.  
