@@ -6,6 +6,8 @@
 ## A perfect place to call home
 Julia Nascimento is a Brazilian illustrator and comic artist. **A Perfect Place to Call Home** is Julia Nascimento’s first collection of visual narratives about her experiences and reflections of life in different places as a foreigner. The site provides information about the book and Julia, a sample of the book that the viewer can read and a contact form to get in touch with Julia.
 
+You can reach site [here](https://mrsmlisa.github.io/a-perfect-place-to-called-home/). 
+
 # 2 UX
 ## Strategy
 ### User stories
@@ -39,9 +41,13 @@ The website uses a single page with the content being navigated by either button
 * As the imagery is a big part of the site it was considered that moving from page to page would interrupt the flow. It was decided that using modals would be better and also a way to demonstrate additional JavaScript capabilities.
 
 ### Overall view
-When the site is first open it looks as the cover of the book with the imagery and book title. When the user moves down the page the footer stays fixed at the bottom of the page to simulate that the user is moving into the book and when the footer stops it is the end.
+When the site is first open it looks as the cover of the book with the imagery and book title. 
 
-Navigation bars it was decided that because the use of the page image at the top of the page a full navbar would be to intrusive. The three bars is the standard use when a site have a collapsible full navbar so that is something users would understand is a way to navigate the page.   
+### Header and footer 
+When the user moves down the page the footer stays fixed at the bottom of the page to simulate that the user is moving into the book and when the footer stops it is the end.
+
+### Navigation bars 
+It was decided that because the use of the page image at the top of the page a full navbar would be to intrusive. The three bars is the standard use when a site have a collapsible full navbar so that is something users would understand is a way to navigate the page.   
 When clicked it opens a small container with links to the different moduls. When one of the links, or the three bars, are clicked the container disappears.
 
 ### Information section
@@ -109,6 +115,7 @@ For the project design to be fully compatible and interactive on all screen type
 
 <img width="450" height="299" alt="different-screens" src="https://github.com/user-attachments/assets/c98cb0f5-eba2-45f0-b297-84cbc1bebc65" />
 
+The header and footer images have a few different size markers, one at 320px, another at 768px and one at 1024px. Having the images at 100% on all devices made the images to small on the smaller screens and to big on the larger. I also like the green space on the side on larger devices as it pulls your focus in.
 
 ### Accessibility
 The aim while designing the webistes is to make it as accessible and user friendly as possible. To achieve this the following has been done:
