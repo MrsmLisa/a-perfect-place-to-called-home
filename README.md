@@ -6,7 +6,7 @@
 ## A perfect place to call home
 Julia Nascimento is a Brazilian illustrator and comic artist. **A Perfect Place to Call Home** is Julia Nascimento’s first collection of visual narratives about her experiences and reflections of life in different places as a foreigner. The site provides information about the book and Julia, a sample of the book that the viewer can read and a contact form to get in touch with Julia.
 
-You can reach site [here](https://mrsmlisa.github.io/a-perfect-place-to-called-home/). 
+You can reach the website [here](https://mrsmlisa.github.io/a-perfect-place-to-called-home/). 
 
 # 2 UX
 ## Strategy
