@@ -48,11 +48,14 @@ Ensure all content in the Modal fits appropriately within the Modal, and is legi
 Ensure all Features function correctly from at least 320px wide.
 
 ## Browser testing
-the different browsers tested
+To test the site I have used:  
+Chrome  
+Firefox  
+Safari  
 
 ## Code validation
 
-## Lighthouse
+### Lighthouse
 I have used Lighthouse in dev tools to test the performance, accessibility and best practices. The first time I had a 72 on performance, 99 on accessibility and 100 for best practices. The problem was the size of the images that I first resized in Photoshop and then compressed using FreeConvert. The new score is:
 For desktop:
 
@@ -63,7 +66,7 @@ For mobile
 <img width="454" height="186" alt="mobil" src="https://github.com/user-attachments/assets/6277d20c-e3ee-4e9c-9aa5-f192fd101f79" />
 
 
-## Validation
+### Validation
 W3C HTML results:
 
 <img width="513" height="133" alt="html-validator" src="https://github.com/user-attachments/assets/51365418-f6aa-40cd-92a5-752865f08507" />
