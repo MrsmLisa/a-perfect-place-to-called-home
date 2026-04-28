@@ -80,7 +80,11 @@ function overlayClose() {
 }
 
 
-/* Author modal */
+/* Author modal 
+All the modals was written with a different code to start, when new 
+problems arose I changed the code for all the modals using an 
+existing code found online.
+The old code and where I found the new code is in the Read Me testing*/
 
 const authorOpen = document.getElementById("openAuthor");
 const authorOpenButton = document.getElementById("openAuthorButton");

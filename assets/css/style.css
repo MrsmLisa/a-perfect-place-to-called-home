@@ -10,6 +10,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Nav Bar */
 .navbar-container {
     display: flex;
     flex-direction: column;
@@ -55,6 +56,7 @@ li {
     list-style: none;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: center;
@@ -83,6 +85,7 @@ header {
     padding: 20px 0;
 }
 
+/* Main section*/
 .main-section {
     display: flex;
     justify-content: center;
@@ -151,6 +154,7 @@ p {
     height: 7em;
 }
 
+/* Carousel */
 .caroulse-container {
     max-width: 75%;
     position: relative;
@@ -206,7 +210,7 @@ gap: 10px;
 padding: 5px;
 }
 
-
+/* Footer */
 footer {
     display: flex;
     justify-content: center;
@@ -220,6 +224,7 @@ footer {
     bottom: 0;
 }
 
+/* Modals */
 .modal-wrapper {
     width: 100%;
     max-width: 1000px;
@@ -345,7 +350,7 @@ label {
     display: none;
 }
 
-
+/* @meadia */
 @media (min-width: 768px) {
      .image-header {
         width: 100%;

@@ -23,194 +23,192 @@
   </head>
 
   <body>
-      <!-- Nav-bar -->
-      <div class="navbar-container">
-        <!-- Header-->
-        <header>
+    <!-- Nav-bar -->
+    <div class="navbar-container">
+      <!-- Header-->
+      <header>
+        <img
+          src="./assets/images/header1.webp"
+          class="image-header"
+          alt="image of a landscape with grass, trees and mountain in the background during the sunset"
+        />
+        <!-- Font Awsome burger-->
+        <i class="fa-solid fa-bars burger" onclick="navbarBurger()"></i>
+      </header>
+      <ol class="navbar-box" id="burger">
+        <li>
+          <button id="openAuthor" onclick="navbarBurger()">
+            <strong>AUTHOR</strong>
+          </button>
+        </li>
+
+        <li>
+          <button onclick="navbarBurger()" id="openQuizz">
+            <strong>QUIZ</strong>
+          </button>
+        </li>
+        <li>
+          <button onclick="navbarBurger()" id="openContact">
+            <strong>CONTACT</strong>
+          </button>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <section class="content-wrapper">
+        <div class="main-section">
+          <h1 class="main-title">A PERFECT PLACE TO CALL HOME</h1>
+        </div>
+
+        <div class="main-text main-section">
+          <p class="first-text">
+            A Perfect Place to Call Home is Julia Nascimento’s first collection
+            of visual narratives about her experiences and reflections of life
+            in different places as a foreigner.
+          </p>
+        </div>
+
+        <div class="main-section">
+          <button
+            class="read-more-button buttons"
+            id="readMeButton"
+            onclick="readMe()"
+          >
+            Read a sample
+          </button>
+        </div>
+
+        <div class="space main-section">
           <img
-            src="./assets/images/header1.webp"
-            class="image-header"
-            alt="image of a landscape with grass, trees and mountain in the background during the sunset"
+            src="./assets/images/dotts.png"
+            alt="Dots in a squrly line moving down"
+            class="squiggle"
           />
-          <!-- Font Awsome burger-->
-          <i class="fa-solid fa-bars burger" onclick="navbarBurger()"></i>
-        </header>
-        <ol class="navbar-box" id="burger">
-          <li>
-            <button id="openAuthor" onclick="navbarBurger()">
-              <strong>AUTHOR</strong>
-            </button>
-          </li>
-
-          <li>
-            <button onclick="navbarBurger()" id="openQuizz">
-              <strong>QUIZ</strong>
-            </button>
-          </li>
-          <li>
-            <button onclick="navbarBurger()" id="openContact">
-              <strong>CONTACT</strong>
-            </button>
-          </li>
-          </ol>
-      </div>
-
-      <!-- Main -->
-      <main>
-        <section class="content-wrapper">
-          <div class="main-section">
-            <h1 class="main-title">A PERFECT PLACE TO CALL HOME</h1>
-          </div>
-
-          <div class="main-text main-section">
-            <p class="first-text">
-              A Perfect Place to Call Home is Julia Nascimento’s first
-              collection of visual narratives about her experiences and
-              reflections of life in different places as a foreigner.
-            </p>
-          </div>
-
-          <div class="main-section">
-            <button
-              class="read-more-button buttons"
-              id="readMeButton"
-              onclick="readMe()"
-            >
-              Read a sample
-            </button>
-          </div>
-
-          <div class="space main-section">
+        </div>
+        <!-- Carousel -->
+        <div class="caroulse-container main-section" id="carousel">
+          <!-- images -->
+          <div class="carousel-image">
+            <p><strong>YEAR-AFTER DISASTERS</strong></p>
+            <img src="assets/images/comic1.webp" alt="A map of the world" />
             <img
-              src="./assets/images/dotts.png"
-              alt="Dots in a squrly line moving down"
-              class="squiggle"
+              src="assets/images/comic2.webp"
+              alt="People speaking japanies"
             />
           </div>
-          <!-- Carousel -->
-          <div class="caroulse-container main-section" id="carousel">
-            <!-- images -->
-            <div class="carousel-image">
-              <p><strong>YEAR-AFTER DISASTERS</strong></p>
-              <img src="assets/images/comic1.webp" alt="A map of the world" />
-              <img
-                src="assets/images/comic2.webp"
-                alt="People speaking japanies"
-              />
-            </div>
-            <div class="carousel-image">
-              <p><strong>YEAR-AFTER DISASTERS</strong></p>
-              <img
-                src="assets/images/comic3.webp"
-                alt="Image of Julia speaking"
-              />
-              <img
-                src="assets/images/comic4.webp"
-                alt="Image of a neucliar powerplant and people in protective gear"
-              />
-            </div>
-            <div class="carousel-image">
-              <p><strong>YEAR-AFTER DISASTERS</strong></p>
-              <img
-                src="assets/images/comic5.webp"
-                alt="A hospital room with people in protective gear"
-              />
-              <img
-                src="assets/images/comic6.webp"
-                alt="Julia thinking in bed"
-              />
-            </div>
-            <div class="carousel-image">
-              <p><strong>IN BLOOM</strong></p>
-              <img src="assets/images/comic7.webp" alt="A hand with tickets" />
-              <img src="assets/images/comic8.webp" alt="Landscape with trees" />
-            </div>
-            <div class="carousel-image">
-              <p><strong>IN BLOOM</strong></p>
-              <img
-                src="assets/images/comic9.webp"
-                alt="Lots of people on a busy street"
-              />
-              <img
-                src="assets/images/comic10.webp"
-                alt="City landscape with cherry trees"
-              />
-            </div>
-            <div class="carousel-image">
-              <p><strong>IN BLOOM</strong></p>
-              <img
-                src="assets/images/comic11.webp"
-                alt="People playing the drums"
-              />
-              <img
-                src="assets/images/comic12.webp"
-                alt="Lots of people on a busy city street"
-              />
-            </div>
-            <div class="carousel-image">
-              <p><strong>IN BLOOM</strong></p>
-              <img
-                src="assets/images/comic13.webp"
-                alt="A sign for an amusement park"
-              />
-              <img
-                src="assets/images/comic14.webp"
-                alt="A fot trying on sandals that are to small"
-              />
-            </div>
-
-            <!-- buttons and dotts from Font Awesome-->
-            <div class="arrows">
-              <i class="fa-solid fa-circle dotts"></i>
-              <i class="fa-solid fa-circle dotts"></i>
-              <i class="fa-solid fa-circle dotts"></i>
-              <i class="fa-solid fa-circle dotts"></i>
-              <i class="fa-solid fa-circle dotts"></i>
-              <i class="fa-solid fa-circle dotts"></i>
-              <i class="fa-solid fa-circle dotts"></i>
-            </div>
-
-            <div class="arrows">
-              <i
-                class="fa-solid fa-circle-chevron-left arrows"
-                onclick="prev()"
-              ></i>
-              <i
-                class="fa-solid fa-circle-chevron-right arrows"
-                onclick="next()"
-              ></i>
-            </div>
+          <div class="carousel-image">
+            <p><strong>YEAR-AFTER DISASTERS</strong></p>
+            <img
+              src="assets/images/comic3.webp"
+              alt="Image of Julia speaking"
+            />
+            <img
+              src="assets/images/comic4.webp"
+              alt="Image of a neucliar powerplant and people in protective gear"
+            />
+          </div>
+          <div class="carousel-image">
+            <p><strong>YEAR-AFTER DISASTERS</strong></p>
+            <img
+              src="assets/images/comic5.webp"
+              alt="A hospital room with people in protective gear"
+            />
+            <img src="assets/images/comic6.webp" alt="Julia thinking in bed" />
+          </div>
+          <div class="carousel-image">
+            <p><strong>IN BLOOM</strong></p>
+            <img src="assets/images/comic7.webp" alt="A hand with tickets" />
+            <img src="assets/images/comic8.webp" alt="Landscape with trees" />
+          </div>
+          <div class="carousel-image">
+            <p><strong>IN BLOOM</strong></p>
+            <img
+              src="assets/images/comic9.webp"
+              alt="Lots of people on a busy street"
+            />
+            <img
+              src="assets/images/comic10.webp"
+              alt="City landscape with cherry trees"
+            />
+          </div>
+          <div class="carousel-image">
+            <p><strong>IN BLOOM</strong></p>
+            <img
+              src="assets/images/comic11.webp"
+              alt="People playing the drums"
+            />
+            <img
+              src="assets/images/comic12.webp"
+              alt="Lots of people on a busy city street"
+            />
+          </div>
+          <div class="carousel-image">
+            <p><strong>IN BLOOM</strong></p>
+            <img
+              src="assets/images/comic13.webp"
+              alt="A sign for an amusement park"
+            />
+            <img
+              src="assets/images/comic14.webp"
+              alt="A fot trying on sandals that are to small"
+            />
           </div>
 
-          <div class="space">
-            <div class="main-section main-button">
-              <button class="buttons" id="openAuthorButton">About</button>
-              <button class="buttons" id="openQuizzButton">Quiz</button>
-              <button class="buttons" id="openContactButton">Contact</button>
-              <a
-                href="https://www.nsjulia.com/"
-                aria-label="Visit my website (opens in a new window)"
-                target="_blank"
-                class="buttons"
-                >Website</a
-              >
-              <a
-                href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
-                aria-label="Buy my book (opens in a new window)"
-                target="_blank"
-                class="buttons"
-                >Buy my book</a
-              >
-            </div>
+          <!-- buttons and dotts from Font Awesome-->
+          <div class="arrows">
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
+            <i class="fa-solid fa-circle dotts"></i>
           </div>
-        </section>
-      </main>
 
-      <!-- Footer -->
-      <footer>
-        <img src="./assets/images/footer1.webp" class="image-footer" alt="" />
-      </footer>
-      <div class="overlay" id="overlay"></div>
+          <div class="arrows">
+            <i
+              class="fa-solid fa-circle-chevron-left arrows"
+              onclick="prev()"
+            ></i>
+            <i
+              class="fa-solid fa-circle-chevron-right arrows"
+              onclick="next()"
+            ></i>
+          </div>
+        </div>
+
+        <div class="space">
+          <div class="main-section main-button">
+            <button class="buttons" id="openAuthorButton">About</button>
+            <button class="buttons" id="openQuizzButton">Quiz</button>
+            <button class="buttons" id="openContactButton">Contact</button>
+            <a
+              href="https://www.nsjulia.com/"
+              aria-label="Visit my website (opens in a new window)"
+              target="_blank"
+              class="buttons"
+              >Website</a
+            >
+            <a
+              href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
+              aria-label="Buy my book (opens in a new window)"
+              target="_blank"
+              class="buttons"
+              >Buy my book</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <img src="./assets/images/footer1.webp" class="image-footer" alt="" />
+    </footer>
+    <div class="overlay" id="overlay"></div>
+
     <!-- About the author modul -->
     <section class="modal-wrapper">
       <div class="author" id="author">
@@ -221,63 +219,66 @@
               <i class="fa-solid fa-xmark" id="closeAuthor"></i>
             </div>
             <div class="modal-scroll">
-            <h2 class="contact-h3">Julia Nascimento</h2>
-            <img
-              src="./assets/images/JuliaNascimento.webp"
-              alt="picture of the author"
-            />
-            <p class="author-text">
-              Julia is a Brazilian illustrator and cartoonist with art, fashion,
-              and research backgrounds. Employing a multidisciplinary and
-              multicultural approach to her work, she is passionate about
-              autobiographical narratives and collaborations.
-            </p>
-            <p class="author-text">
-              While living in Japan for almost a decade she pursued postgraduate
-              studies in fashion and worked in different sectors of the fashion
-              industry. In 2017 she launched her career in illustration and
-              comics, and in 2018 she co-founded ToCo – the Tokyo Collective.
-            </p>
-            <p class="author-text">
-              Currently based in Sweden, Julia Nascimento has her work published
-              in books and periodicals in Japan, Sweden, USA, and the UK.
-            </p>
-            <div>
-              <!-- Font Awsome social media symbols -->
-              <a
-                href="https://www.facebook.com/julia.nascim"
-                aria-label="Visit my Facebook (opens in a new window)"
-                target="_blank"
-              >
-                <i class="fa-brands fa-facebook symbols"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/ns_julia/"
-                aria-label="Visit my Instagram (opens in a new window)"
-                target="_blank"
-              >
-                <i class="fa-brands fa-instagram symbols"></i>
-              </a>
-              <a
-                href="https://www.nsjulia.com/"
-                aria-label="Visit my website (opens in a new window)"
-                target="_blank"
-              >
-                <i class="fa-solid fa-house-chimney-window symbols"></i>
-              </a>
-              <a
-                href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
-                aria-label="Buy my book (opens in a new window)"
-                target="_blank"
-              >
-                <i class="fa-solid fa-book symbols"></i>
-              </a>
-            </div>
+              <h2 class="contact-h3">Julia Nascimento</h2>
+              <img
+                src="./assets/images/JuliaNascimento.webp"
+                alt="picture of the author"
+              />
+              <p class="author-text">
+                Julia is a Brazilian illustrator and cartoonist with art,
+                fashion, and research backgrounds. Employing a multidisciplinary
+                and multicultural approach to her work, she is passionate about
+                autobiographical narratives and collaborations.
+              </p>
+              <p class="author-text">
+                While living in Japan for almost a decade she pursued
+                postgraduate studies in fashion and worked in different sectors
+                of the fashion industry. In 2017 she launched her career in
+                illustration and comics, and in 2018 she co-founded ToCo – the
+                Tokyo Collective.
+              </p>
+              <p class="author-text">
+                Currently based in Sweden, Julia Nascimento has her work
+                published in books and periodicals in Japan, Sweden, USA, and
+                the UK.
+              </p>
+              <div>
+                <!-- Font Awsome social media symbols -->
+                <a
+                  href="https://www.facebook.com/julia.nascim"
+                  aria-label="Visit my Facebook (opens in a new window)"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook symbols"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/ns_julia/"
+                  aria-label="Visit my Instagram (opens in a new window)"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram symbols"></i>
+                </a>
+                <a
+                  href="https://www.nsjulia.com/"
+                  aria-label="Visit my website (opens in a new window)"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-house-chimney-window symbols"></i>
+                </a>
+                <a
+                  href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
+                  aria-label="Buy my book (opens in a new window)"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-book symbols"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Quizz modul -->
     <section class="modal-wrapper">
       <div id="quizz">
@@ -288,51 +289,52 @@
               <i class="fa-solid fa-xmark" id="closeQuizz"></i>
             </div>
             <div class="modal-scroll">
-            <form id="quizz-form" method="get">
-              <h3 class="contact-h3">Should you move abroad?</h3>
-              <p>Do you like to travel abroad?</p>
-              <label>
-                <input name="q1" type="radio" required class="yes" />
-                Yes</label
-              >
-              <label><input name="q1" type="radio" class="no" />No</label>
-              <p><strong>Do you like foreign food?</strong></p>
-              <label>
-                <input name="q2" type="radio" required class="yes" />
-                Yes</label
-              >
-              <label><input name="q2" type="radio" class="no" />No</label>
-              <p><strong>Do you like moving?</strong></p>
-              <label>
-                <input name="q3" type="radio" required class="yes" />
-                Yes</label
-              >
-              <label><input name="q3" type="radio" class="no" />No</label>
-              <p>
-                <strong>Do you find it easy to learn a new language?</strong>
-              </p>
-              <label>
-                <input name="q4" type="radio" required class="yes" />
-                Yes</label
-              >
-              <label><input name="q4" type="radio" class="no" />No</label>
-              <p><strong>Could you leave your loved once behind?</strong></p>
-              <label>
-                <input name="q5" type="radio" required class="yes" />
-                Yes</label
-              >
-              <label><input name="q5" type="radio" class="no" />No</label>
-              <div>
-                <button type="submit" class="buttons b-quizz">
-                  Get my answer
-                </button>
-              </div>
-            </form>
+              <form id="quizz-form" method="get">
+                <h3 class="contact-h3">Should you move abroad?</h3>
+                <p>Do you like to travel abroad?</p>
+                <label>
+                  <input name="q1" type="radio" required class="yes" />
+                  Yes</label
+                >
+                <label><input name="q1" type="radio" class="no" />No</label>
+                <p><strong>Do you like foreign food?</strong></p>
+                <label>
+                  <input name="q2" type="radio" required class="yes" />
+                  Yes</label
+                >
+                <label><input name="q2" type="radio" class="no" />No</label>
+                <p><strong>Do you like moving?</strong></p>
+                <label>
+                  <input name="q3" type="radio" required class="yes" />
+                  Yes</label
+                >
+                <label><input name="q3" type="radio" class="no" />No</label>
+                <p>
+                  <strong>Do you find it easy to learn a new language?</strong>
+                </p>
+                <label>
+                  <input name="q4" type="radio" required class="yes" />
+                  Yes</label
+                >
+                <label><input name="q4" type="radio" class="no" />No</label>
+                <p><strong>Could you leave your loved once behind?</strong></p>
+                <label>
+                  <input name="q5" type="radio" required class="yes" />
+                  Yes</label
+                >
+                <label><input name="q5" type="radio" class="no" />No</label>
+                <div>
+                  <button type="submit" class="buttons b-quizz">
+                    Get my answer
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Yes answer pop-up -->
     <section>
       <div id="yesPopup">
@@ -346,7 +348,9 @@
     <section>
       <div id="noPopup">
         <div class="modal-container modal-width" id="openNo">
-          <h2>You should stay in your own contry, moving is annoying anyway.</h2>
+          <h2>
+            You should stay in your own contry, moving is annoying anyway.
+          </h2>
           <i class="fa-solid fa-xmark" id="closeNo"></i>
         </div>
       </div>
@@ -362,85 +366,86 @@
               <i class="fa-solid fa-xmark" id="closeContact"></i>
             </div>
             <div class="modal-scroll">
-            <h3 class="contact-h3">Hello!</h3>
-            <form id="contactForm" method="get">
-              <p class="contact">
-                Please leave me a message and I will get back to you as soon as
-                possible.
-              </p>
-              <input
-                class="contact"
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your name"
-                autocomplete="given-name"
-              />
+              <h3 class="contact-h3">Hello!</h3>
+              <form id="contactForm" method="get">
+                <p class="contact">
+                  Please leave me a message and I will get back to you as soon
+                  as possible.
+                </p>
+                <input
+                  class="contact"
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  autocomplete="given-name"
+                />
 
-              <input
-                class="contact"
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Email"
-                autocomplete="email"
-              />
-              <textarea
-                class="contact"
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Message"
-              ></textarea>
+                <input
+                  class="contact"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                />
+                <textarea
+                  class="contact"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+                <div>
+                  <p id="nameError" style="display: none">
+                    Please enter your name.
+                  </p>
+                  <p id="emailError" style="display: none">
+                    Please enter your email.
+                  </p>
+                  <p id="messageError" style="display: none">
+                    Please enter a message.
+                  </p>
+                  <button class="buttons">Submit</button>
+                </div>
+              </form>
               <div>
-                <p id="nameError" style="display: none">
-                  Please enter your name.
-                </p>
-                <p id="emailError" style="display: none">
-                  Please enter your email.
-                </p>
-                <p id="messageError" style="display: none">
-                  Please enter a message.
-                </p>
-                <button class="buttons">Submit</button>
+                <!-- Font Awsome social media symbols -->
+                <a
+                  href="https://www.facebook.com/julia.nascim"
+                  aria-label="Visit my Facebook (opens in a new window)"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook symbols"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/ns_julia/"
+                  aria-label="Visit my Instagram (opens in a new window)"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram symbols"></i>
+                </a>
+                <a
+                  href="https://www.nsjulia.com/"
+                  aria-label="Visit my website (opens in a new window)"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-house-chimney-window symbols"></i>
+                </a>
+                <a
+                  href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
+                  aria-label="Buy my book (opens in a new window)"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-book symbols"></i>
+                </a>
               </div>
-            </form>
-            <div>
-              <!-- Font Awsome social media symbols -->
-              <a
-                href="https://www.facebook.com/julia.nascim"
-                aria-label="Visit my Facebook (opens in a new window)"
-                target="_blank"
-              >
-                <i class="fa-brands fa-facebook symbols"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/ns_julia/"
-                aria-label="Visit my Instagram (opens in a new window)"
-                target="_blank"
-              >
-                <i class="fa-brands fa-instagram symbols"></i>
-              </a>
-              <a
-                href="https://www.nsjulia.com/"
-                aria-label="Visit my website (opens in a new window)"
-                target="_blank"
-              >
-                <i class="fa-solid fa-house-chimney-window symbols"></i>
-              </a>
-              <a
-                href="https://www.hybriden.se/en/product/a-perfect-place-to-call-home-9789187825422/"
-                aria-label="Buy my book (opens in a new window)"
-                target="_blank"
-              >
-                <i class="fa-solid fa-book symbols"></i>
-              </a>
-            </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
     <!--success modal for submitting message -->
     <section class="modal-wrapper">
       <div id="success">
@@ -456,7 +461,7 @@
 
     <!-- This div is so there is enough space behind the footer-->
     <div class="space2 main-section"></div>
-    
+
     <!-- js script-->
     <script src="./js/app.js"></script>
   </body>
