@@ -381,11 +381,11 @@ label {
 
 @media (min-width: 1024px) {
     .image-header{
-        width: 80%;
+        width: 70%;
         height: auto;
     }
      .image-footer {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
     .caroulse-container {
